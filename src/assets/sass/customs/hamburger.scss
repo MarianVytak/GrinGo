@@ -1,7 +1,7 @@
 .hamburger {
   position: relative;
-  width: 3.2em;
-  height: 3.2em;
+  width: 32px;
+  height: 32px;
   cursor: pointer;
   z-index: 99999;
   &.hamburger-active .hamburger-line:nth-child(1) {
@@ -28,15 +28,14 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%,-50%);
-  background: $white;
+  background: $gray;
   transition: .5s;
-  box-shadow: 0 0 2px 0 rgba(255,255,255,0.5);
   &:nth-child(1) {
-    transform: translate(-50%,-50%) translateY(-1em);
+    transform: translate(-50%,-50%) translateY(-10px);
     transition: .1s;
   }
   &:nth-child(4 ) {
-    transform: translate(-50%,-50%) translateY(1em);
+    transform: translate(-50%,-50%) translateY(10px);
     transition: .1s;
   }
 }

@@ -2,8 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 2.5em 0 0;
-  background-color: $bg;
+  padding: 0 110px 0 0;
+  background-color: #212730;
   box-sizing: border-box;
 }
 
@@ -14,11 +14,12 @@
 }
 
 .header__hamburger {
-  width: 11em;
+  width: 110px;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: rgba($black, .1);
 }
 
 .header__logo {
@@ -32,13 +33,19 @@
   align-items: center;
   justify-content: center;
   img {
-    width: 10em;
+    width: 80px;
   }
 }
 
 .header__logo_text {
-  font-size: 2.8em;
+  font-size: 28px;
   color: $white;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 
 .navigation__list {
@@ -52,26 +59,36 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  height: 8em;
-  margin-right: 2.5em;
+  height: 70px;
+  margin-right: 25px;
+  &:last-child {
+    margin-right: 0;
+  }
+  .live {
+    width: 7px;
+    height: 7px;
+    margin-right: 5px;
+    border-radius: 50%;
+    background-color: $green;
+  }
 }
 
 .navigation__list_item_link {
-  font-size: 1.8em;
+  font-size: 18px;
   color: rgba($white, .4);
   &:hover {
-    color: rgba($white, .5);
+    color: rgba($white, .6);
   }
   &.active {
-    color: rgba($white, .5);
+    color: rgba($white, .6);
     &:before {
       content: '';
       position: absolute;
       left: 0;
       bottom: 0;
       width: 100%;
-      height: 0.25em;
-      border-radius: 0.2em 0.2em 0 0;
+      height: 4px;
+      border-radius: 2px 2px 0 0;
       background-color: $green;
     }
   }
@@ -81,4 +98,9 @@
       color: $gold;
     }
   }
+}
+
+.header__login {
+  margin-right: 20px;
+  margin-left: 50px;
 }
