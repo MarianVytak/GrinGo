@@ -1,0 +1,130 @@
+.section-2 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 15px 30px;
+  background-color: #171921;
+}
+
+.section-2__title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 50px;
+  font-family: 'SF Pro Display Meduim', sans-serif;
+  font-size: 23px;
+  color: $white;
+  white-space: nowrap;
+  img {
+    width: 25px;
+    margin-right: 10px;
+  }
+}
+
+.section-2__slider {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.section-2__slider_item {
+  display: flex !important;
+  align-items: center;
+  justify-content: space-between;
+  width: 260px;
+  margin-right: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid $green;
+  box-sizing: border-box;
+  &:last-child {
+    margin-right: 0;
+  }
+  &.yellow {
+    border-color: #fea429;
+    .section-2__slider_item_img {
+      border-color: #fea429;
+    }
+    .section-2__slider_item_percent_icon {
+      fill: #fea429;
+    }
+  }
+  &.orange {
+    border-color: #ec5a3c;
+    .section-2__slider_item_img {
+      border-color: #ec5a3c;
+    }
+    .section-2__slider_item_percent_icon {
+      fill: #ec5a3c;
+    }
+  }
+  &.red {
+    border-color: #fe4141;
+    .section-2__slider_item_img {
+      border-color: #fe4141;
+    }
+    .section-2__slider_item_percent_icon {
+      fill: #fe4141;
+    }
+  }
+  &.blue {
+    border-color: #3072bb;
+    .section-2__slider_item_img {
+      border-color: #3072bb;
+    }
+    .section-2__slider_item_percent_icon {
+      fill: #3072bb;
+    }
+  }
+}
+
+.section-2__slider_item_left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.section-2__slider_item_img {
+  width: 60px;
+  min-width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 3px solid $green;
+  box-sizing: border-box;
+  img {
+    width: 100%;
+  }
+}
+
+.section-2__slider_item_name {
+  margin: 0 10px;
+  font-family: 'SF Pro Display Bold', sans-serif;
+  font-size: 15px;
+  color: #c2c5c8;
+}
+
+.section-2__slider_item_label {
+  display: block;
+  font-size: 13px;
+  color: #b1b1b1;
+  white-space: nowrap;
+}
+
+.section-2__slider_item_percent {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 5px;
+}
+
+.section-2__slider_item_percent_value {
+  font-family: 'SF Pro Display Bold', sans-serif;
+  font-size: 23px;
+  color: $white;
+}
+
+.section-2__slider_item_percent_icon {
+  width: 15px;
+  margin-left: 5px;
+  fill: $green;
+}
