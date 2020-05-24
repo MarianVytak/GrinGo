@@ -4,6 +4,8 @@ Table of contents
 ## Slick
 ## Customs
 ## Header
+## Page Home
+## Side Menu
 ## Section 1
 ## Footer
 *******************/
@@ -21,6 +23,14 @@ Table of contents
 /* ## Header
 ====================*/
 @import "../../templates/header/header";
+
+/* ## Page Home
+====================*/
+@import "../../templates/page-home/page-home";
+
+/* ## Side Menu
+====================*/
+@import "../../templates/side-menu/side-menu";
 
 /* ## Section 1
 ====================*/
