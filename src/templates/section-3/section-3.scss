@@ -1,0 +1,77 @@
+.section-3 {
+  padding: 25px 0 50px;
+}
+
+.section-3__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section-3__list_item {
+  position: relative;
+  margin-right: 80px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.section-3__list_item_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  &:hover {
+    .section-3__list_item_icon {
+      .prefix__cls-1 {
+        fill: $green;
+      }
+      .prefix__cls-2 {
+        stroke: $green;
+      }
+    }
+    .section-3__list_item_title {
+      color: $green;
+    }
+  }
+}
+
+.section-3__list_item_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 25px;
+  border: solid 1px #363c42;
+  background-color: #14191e;
+}
+
+.section-3__list_item_icon {
+  .prefix__cls-1 {
+    fill: $white;
+    transition: .3s;
+  }
+  .prefix__cls-2 {
+    fill:none;
+    stroke: $white;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    stroke-width:1.6px;
+    transition: .3s;
+  }
+}
+
+.section-3__list_item_title {
+  position: absolute;
+  left: 50%;
+  bottom: -15px;
+  transform: translate(-50%, 100%);
+  margin-top: 15px;
+  font-family: 'SF Pro Display Meduim', sans-serif;
+  font-size: 15px;
+  color: $white;
+  text-align: center;
+  white-space: nowrap;
+  transition: .3s;
+}
