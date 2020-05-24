@@ -7,7 +7,7 @@
   padding: 0 15px;
   border-radius: 10px;
   background-color: $green;
-  font-weight: bold;
+  font-family: 'SF Pro Display Semibold', sans-serif;
   font-size: 16px;
   color: $white;
   box-sizing: border-box;
@@ -20,6 +20,7 @@
     padding: 0 25px;
   }
   &.btn-outline {
+    font-family: 'SF Pro Display Meduim', sans-serif;
     border: 1px solid $gray;
     background-color: transparent;
   }

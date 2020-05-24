@@ -40,6 +40,9 @@
 .header__logo_text {
   font-size: 28px;
   color: $white;
+  b {
+    font-family: 'SF Pro Display Bold', sans-serif;
+  }
 }
 
 .header__right {
@@ -74,6 +77,7 @@
 }
 
 .navigation__list_item_link {
+  font-family: 'SF Pro Display Meduim', sans-serif;
   font-size: 18px;
   color: rgba($white, .4);
   &:hover {

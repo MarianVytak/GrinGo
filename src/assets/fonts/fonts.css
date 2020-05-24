@@ -5,3 +5,24 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'SF Pro Display Meduim';
+  src: url('SFPro/SFProDisplay-Medium.woff2') format('woff2'),
+  url('SFPro/SFProDisplay-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SF Pro Display Semibold';
+  src: url('SFPro/SFProDisplay-Semibold.woff2') format('woff2'),
+  url('SFPro/SFProDisplay-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SF Pro Display Bold';
+  src: url('SFPro/SFProDisplay-Bold.woff2') format('woff2'),
+  url('SFPro/SFProDisplay-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
