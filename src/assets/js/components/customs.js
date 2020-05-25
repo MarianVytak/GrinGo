@@ -4,6 +4,35 @@ $(function () {
 
 
 
+    $('.section__slider-4').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: true,
+        fade: false,
+        arrows: true,
+        dots: false,
+    });
+
+    $('.section__slider-5').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        infinite: true,
+        fade: false,
+        arrows: true,
+        dots: false,
+    });
+
+    $('.section__slider-6').slick({
+        slidesToShow: 6,
+        slidesToScroll: 1,
+        infinite: true,
+        fade: false,
+        arrows: true,
+        dots: false,
+    });
+
+
+
     // $('.section-1__slider_card').slick({
     //     slidesToShow: 1,
     //     slidesToScroll: 1,

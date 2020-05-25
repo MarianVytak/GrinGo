@@ -1,0 +1,16 @@
+.h2 {
+  margin: 0;
+  font-family: 'SF Pro Display Semibold', sans-serif;
+  font-size: 28px;
+  color: $white;
+}
+
+.section__title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.section__title_icon {
+  margin-right: 20px;
+}

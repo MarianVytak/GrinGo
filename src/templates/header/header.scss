@@ -1,10 +1,15 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
   padding: 0 110px 0 0;
   background-color: #212730;
   box-sizing: border-box;
+  z-index: 8000;
 }
 
 .header__left {
@@ -15,7 +20,7 @@
 
 .header__hamburger {
   width: 110px;
-  height: 100%;
+  height: 70px;
   display: flex;
   align-items: center;
   justify-content: center;
