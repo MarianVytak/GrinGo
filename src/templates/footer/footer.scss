@@ -1,1 +1,137 @@
-.footer {}
+.footer {
+  padding: 0 30px;
+}
+
+.footer__lvl1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 45px 0;
+  border-top: 1px solid $gray;
+}
+
+.footer__lvl1_link {
+  margin-right: 20px;
+  font-family: 'SF Pro Display Meduim', sans-serif;
+  font-size: 18px;
+  color: $gray;
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover {
+    color: $white;
+  }
+}
+
+.footer__lvl2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0 25px;
+  border-top: 1px solid $gray;
+  .footer__icons {
+    width: 100%;
+  }
+}
+
+.footer__icons_title {
+  margin-bottom: 15px;
+  font-size: 16px;
+  color: rgba($white, .6);
+}
+
+.footer__icons_list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.footer__icons_list_item {
+  margin-right: 20px;
+  cursor: pointer;
+  transition: .3s;
+  filter: grayscale(1);
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover {
+    filter: grayscale(0);
+  }
+}
+
+.footer__lvl3 {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 25px 0;
+  border-top: 1px solid $gray;
+  .footer__icons_list {
+    margin-right: 65px;
+  }
+}
+
+.footer__text {
+  font-size: 18px;
+  color: rgba($white, .3);
+}
+
+.footer__lvl4 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0 60px;
+  border-top: 1px solid $gray;
+}
+
+.footer__lvl4_left {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.footer__logo_img {
+  width: 60px;
+  filter: grayscale(1);
+}
+
+.footer__logo_text {
+  font-size: 23px;
+  color: rgba($white, .5);
+  b {
+    font-family: 'SF Pro Display Bold', sans-serif;
+  }
+}
+
+.footer__lvl4_mid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-size: 18px;
+  color: rgba($white, .3);
+  text-align: center;
+}
+
+.footer__lvl4_right {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.footer__lvl4_right_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  margin-right: 20px;
+  border-radius: 50%;
+  border: solid 3px #8f9095;
+  background-color: #e2e2e2;
+  box-sizing: border-box;
+  font-family: 'SF Pro Display Bold', sans-serif;
+  font-size: 16px;
+  color: #45464b;
+}
