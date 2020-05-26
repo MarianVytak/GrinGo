@@ -1,0 +1,39 @@
+.all-games {
+  padding: 30px;
+}
+
+.all-games__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.all-games__title_btn {
+  .btn {
+    border-radius: 25px;
+    font-size: 15px;
+    text-transform: uppercase;
+  }
+}
+
+.all-games__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+  padding: 30px 0;
+  .card {
+    width: calc(20% - 30px);
+    margin: 15px;
+  }
+}
+
+.all-games__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  .btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}
