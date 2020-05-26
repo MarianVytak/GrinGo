@@ -4,6 +4,15 @@ $(function () {
 
 
 
+    $('.section__slider-3').slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        infinite: true,
+        fade: false,
+        arrows: true,
+        dots: false,
+    });
+
     $('.section__slider-4').slick({
         slidesToShow: 4,
         slidesToScroll: 1,
