@@ -6,12 +6,81 @@
   width: 110px;
   padding-bottom: 250px;
   box-sizing: border-box;
-  background-color: #15181d;
+  backdrop-filter: blur(22px);
+  background-color: rgba(#15181d, .8);
   z-index: 8000;
+  transition: width .5s;
+  &.active {
+    width: 250px;
+    .side-menu__top {
+      padding: 20px 25px 20px 43px;
+    }
+    .side-menu__bot {
+      padding: 10px 25px 10px 43px;
+    }
+    .side-menu__top_list_item_link {
+      justify-content: flex-start;
+      &:hover {
+        .side-menu__top_list_item_link_label {
+          color: $green;
+        }
+      }
+      &.gold {
+        &:hover {
+          .side-menu__top_list_item_link_label {
+            color: $gold;
+          }
+        }
+      }
+    }
+    .side-menu__top_list_item_link_icon {
+      min-width: 25px;
+      margin-right: 20px;
+    }
+    .side-menu__top_list_item_link_label {
+      position: inherit;
+      bottom: auto;
+      left: auto;
+      transform: none;
+      width: auto;
+      font-size: 18px;
+      text-align: left;
+      opacity: 1;
+    }
+    .side-menu__bot_list_item_link {
+      justify-content: flex-start;
+      &:hover {
+        .side-menu__bot_list_item_link_label {
+          color: $white;
+        }
+      }
+      &.gold {
+        &:hover {
+          .side-menu__bot_list_item_link_label {
+            color: $gold;
+          }
+        }
+      }
+    }
+    .side-menu__bot_list_item_link_icon {
+      min-width: 25px;
+      margin-right: 20px;
+    }
+    .side-menu__bot_list_item_link_label {
+      position: inherit;
+      bottom: auto;
+      left: auto;
+      transform: none;
+      width: auto;
+      font-size: 18px;
+      text-align: left;
+      opacity: 1;
+    }
+  }
 }
 
 .side-menu__top {
-  padding: 20px 0;
+  padding: 20px 43px;
   height: 60%;
   border-bottom: 1px solid $bg;
 }
@@ -55,7 +124,7 @@
 .side-menu__top_list_item_link_icon {
   width: 25px;
   fill: $gray;
-  transition: .3s;
+  transition: fill .3s;
 }
 
 .side-menu__top_list_item_link_label {
@@ -63,16 +132,17 @@
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 100%);
-  width: 100%;
+  width: 100px;
   text-align: center;
   font-size: 14px;
   color: $gray;
   opacity: 0;
-  transition: .3s;
+  //transition: color, opacity .3s;
+  transition: .5s;
 }
 
 .side-menu__bot {
-  padding: 10px 0;
+  padding: 10px 43px;
   height: 35%;
 }
 
@@ -123,7 +193,7 @@
   bottom: 0;
   left: 50%;
   transform: translate(-50%, 100%);
-  width: 100%;
+  width: 100px;
   text-align: center;
   font-size: 14px;
   color: $gray;
