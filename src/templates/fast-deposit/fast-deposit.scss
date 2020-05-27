@@ -1,0 +1,178 @@
+.fast-deposit {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 15px;
+  box-sizing: border-box;
+  border-radius: 55px 55px 0 0;
+  background-color: $green;
+  transition: .5s;
+}
+
+.fast-deposit__value {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  min-width: 80px;
+  height: 80px;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: $white;
+  font-family: 'SF Pro Display Bold', sans-serif;
+  font-size: 18px;
+  color: $green;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75px;
+    height: 75px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    border: 1px dashed $green;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: $green;
+  }
+}
+
+.fast-deposit__desc {
+  display: block;
+  margin-top: 20px;
+  font-family: 'SF Pro Display Semibold', sans-serif;
+  font-size: 18px;
+  color: rgba($black, .45);
+  text-align: center;
+}
+
+.fast-deposit__dropdown {
+  position: relative;
+  margin-top: 10px;
+}
+
+.fast-deposit__dropdown_link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: solid 1px rgba(#707070, .25);
+  background-color: rgba($white, .25);
+  cursor: pointer;
+  transition: .3s;
+  &:hover {
+    background-color: rgba($white, .6);
+  }
+}
+
+.fast-deposit__dropdown_content {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: solid 1px rgba(#707070, .25);
+  background-color: $white;
+  overflow: hidden;
+  .fast-deposit__dropdown_item {
+    &:hover {
+      background-color: #eeeeee;
+    }
+  }
+}
+
+.fast-deposit__dropdown_item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 30px;
+  padding: 0 5px;
+  box-sizing: border-box;
+  border-bottom: solid 1px rgba(#707070, .25);
+  cursor: pointer;
+  transition: .3s;
+  &:last-child {
+    border-bottom: none;
+  }
+}
+
+.fast-deposit__dropdown_item_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 31px;
+  height: 19px;
+  margin-right: 2px;
+  padding: 3px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border: solid 1px #d4d4d4;
+  background-color: $white;
+}
+
+.fast-deposit__dropdown_item_number {
+  font-family: 'SF Pro Display Meduim', sans-serif;
+  font-size: 14px;
+  color: rgba($black, .6);
+}
+
+.fast-deposit.active {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10px 35px 10px 15px;
+  border-radius: 40px 0 0 0;
+  .fast-deposit__value {
+    margin-right: 25px;
+  }
+  .fast-deposit__box {
+    width: 100%;
+  }
+  .fast-deposit__desc {
+    margin-top: 5px;
+  }
+  .fast-deposit__dropdown {
+    margin-top: 0;
+  }
+  .fast-deposit__dropdown_item {
+    height: 40px;
+    padding: 0 10px 0 0;
+  }
+  .fast-deposit__dropdown_item_icon {
+    width: 35px;
+    height: 40px;
+    margin-right: 8px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    transition: .3s;
+  }
+  .fast-deposit__dropdown_content {
+    .fast-deposit__dropdown_item_icon {
+      border-radius: 0;
+      height: 39px;
+    }
+    .fast-deposit__dropdown_item {
+      &:hover {
+        .fast-deposit__dropdown_item_icon {
+          background-color: #eeeeee;
+        }
+      }
+    }
+  }
+}
