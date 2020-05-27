@@ -42,6 +42,25 @@ $(function () {
 
 
 
+    const scrollTop = $('.scroll-top');
+    scrollTop.on('click', function (e) {
+        e.preventDefault();
+        $('html, body').animate({
+            scrollTop: 0
+        }, 2000);
+    });
+    $(document).on('scroll', function () {
+        const scrollTopStart = $('.section-5').offset().top;
+
+        if (scrollTop.offset().top >= scrollTopStart) {
+            scrollTop.addClass('active');
+        } else {
+            scrollTop.removeClass('active');
+        }
+    })
+
+
+
     // $('.section-1__slider_card').slick({
     //     slidesToShow: 1,
     //     slidesToScroll: 1,
