@@ -17,6 +17,13 @@
     }
     .side-menu__bot {
       padding: 10px 25px 10px 43px;
+      .side-menu__link {
+        &:hover {
+          .side-menu__label {
+            color: $white;
+          }
+        }
+      }
     }
     .side-menu__link {
       justify-content: flex-start;
