@@ -2,7 +2,7 @@
   position: relative;
   transition: .3s;
   &:hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
     .card__overflow {
       background-color: rgba($black, .6);
     }
