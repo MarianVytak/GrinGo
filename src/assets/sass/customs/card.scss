@@ -52,13 +52,13 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 55px;
   height: 55px;
   border-radius: 50%;
-  background-color: $green;
+  background-image: url(../../../assets/img/svg/play.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   opacity: 0;
   transition: .3s;
 }
@@ -76,9 +76,3 @@
     color: $white;
   }
 }
-
-.card {}
-
-.card {}
-
-.card {}
