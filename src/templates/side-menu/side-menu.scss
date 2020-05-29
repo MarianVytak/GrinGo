@@ -39,6 +39,20 @@
           }
         }
       }
+      &.diamond {
+        &:hover {
+          .side-menu__label {
+            color: #58acff;
+          }
+        }
+      }
+      &.bonus {
+        &:hover {
+          .side-menu__label {
+            color: #fea429;
+          }
+        }
+      }
     }
     .side-menu__icon {
       margin-right: 20px;
@@ -65,6 +79,16 @@
 .side-menu__bot {
   padding: 10px 43px;
   height: 35%;
+  .side-menu__link {
+    &:hover {
+      .side-menu__icon {
+        filter: opacity(1);
+      }
+    }
+  }
+  .side-menu__icon {
+    filter: opacity(0.6);
+  }
 }
 
 .side-menu__list {
