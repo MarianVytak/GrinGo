@@ -99,8 +99,11 @@
   border-radius: 50%;
   border: 3px solid $green;
   box-sizing: border-box;
+  overflow: hidden;
   img {
-    width: 100%;
+    min-width: 100%;
+    min-height: 100%;
+    border-radius: 50%;
   }
 }
 
