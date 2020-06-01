@@ -9,6 +9,7 @@
 }
 
 .section-2__title {
+  -ms-grid-column: 1;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -19,10 +20,12 @@
   white-space: nowrap;
   img {
     min-width: 45px;
+    min-height: 60px;
   }
 }
 
 .section-2__slider {
+  -ms-grid-column: 2;
   .slick-list {
     margin: 0 -10px;
   }
