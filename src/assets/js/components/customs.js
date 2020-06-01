@@ -122,11 +122,11 @@ $(function () {
             $(thisDropdownContent).removeClass('active');
         } else {
             dropdownContent.removeClass('active');
-            dropdownContent.removeClass('active');
-            $(thisDropdownContent).addClass('active');
             $(thisDropdownContent).addClass('active');
         }
     });
+
+
 
     // Sort Label
     let sortLabel = $('.sort-label');
@@ -138,6 +138,19 @@ $(function () {
         sortItem.removeClass('active');
         $(this).addClass('active');
         sortLabel.text(sortItemText)
+    });
+
+
+
+    // Accordion
+    let accordionLink = $('.accordion__link');
+    // let accordionContent = $('.accordion__content');
+
+    accordionLink.on('click', function (e) {
+        e.preventDefault();
+        let thisAccordionContent = $(this).attr('href');
+        $(this).toggleClass('active');
+        $(thisAccordionContent).slideToggle();
     });
 
 

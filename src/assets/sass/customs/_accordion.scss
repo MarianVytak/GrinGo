@@ -1,0 +1,38 @@
+.accordion__item {
+  padding: 0 20px;
+  border-bottom: 1px solid #32373e;
+}
+
+.accordion__link {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 80px;
+  font-family: 'SF Pro Display Meduim', sans-serif;
+  font-size: 18px;
+  color: $white;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 6px 8px 6px;
+    border-color: transparent transparent #797d82 transparent;
+    transition: .3s;
+  }
+  &.active {
+    &:before {
+      transform: translateY(-50%) rotate(180deg);
+    }
+  }
+}
+
+.accordion__content {
+  display: none;
+  padding-bottom: 50px;
+}
