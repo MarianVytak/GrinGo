@@ -90,6 +90,7 @@ $(function () {
 
 
 
+    // Scroll Top
     const scrollTop = $('.scroll-top');
     scrollTop.on('click', function (e) {
         e.preventDefault();
@@ -109,36 +110,35 @@ $(function () {
 
 
 
-    // $('.section-1__slider_card').slick({
-    //     slidesToShow: 1,
-    //     slidesToScroll: 1,
-    //     infinite: true,
-    //     focusOnSelect: true,
-    //     autoplay: true,
-    //     autoplaySpeed: 3000,
-    //     fade: false,
-    //     arrows: false,
-    //     dots: true,
-    //     asNavFor: '.section-1__slider_img',
-    //     appendDots: $('.section-1__slider__counter'),
-    //     customPaging: function (slider, i) {
-    //         return '<span class="slide-current">' + (i + 1) + '</span>' + '<span>из</span>' + '<span class="slide-length">' + slider.slideCount +'</span>';
-    //     },
-    //     responsive: [
-    //         {
-    //             breakpoint: 9999,
-    //             settings: "unslick"
-    //         },
-    //         {
-    //             breakpoint: 1200,
-    //             settings: {
-    //                 slidesToShow: 1,
-    //                 slidesToScroll: 1,
-    //                 arrows: true,
-    //             }
-    //         }
-    //     ]
-    // });
+    // Dropdown
+    let dropdownLink = $('.js-dropdown-link');
+    let dropdownContent = $('.js-dropdown-content');
+
+    dropdownLink.on('click', function (e) {
+        e.preventDefault();
+        let thisDropdownContent = $(this).attr('href');
+        if ($(thisDropdownContent).hasClass('active')) {
+            dropdownContent.removeClass('active');
+            $(thisDropdownContent).removeClass('active');
+        } else {
+            dropdownContent.removeClass('active');
+            dropdownContent.removeClass('active');
+            $(thisDropdownContent).addClass('active');
+            $(thisDropdownContent).addClass('active');
+        }
+    });
+
+    // Sort Label
+    let sortLabel = $('.sort-label');
+    let sortItem = $('.modal-search__settings_list_item_link');
+
+    sortItem.on('click', function (e) {
+        e.preventDefault();
+        let sortItemText = $(this).text();
+        sortItem.removeClass('active');
+        $(this).addClass('active');
+        sortLabel.text(sortItemText)
+    });
 
 
 
