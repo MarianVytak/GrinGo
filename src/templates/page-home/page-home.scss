@@ -1,22 +1,22 @@
 .page-home {
   position: relative;
-  padding-left: 110px;
-  padding-right: 130px;
+  padding-left: 11em;
+  padding-right: 13em;
 }
 
 .scroll-top {
   position: fixed;
-  bottom: 250px;
-  right: 35px;
-  width: 70px;
-  height: 70px;
+  bottom: 25em;
+  right: 3.5em;
+  width: 7em;
+  height: 7em;
   box-sizing: border-box;
   border-radius: 50%;
   background-color: rgba($white, .1);
   background-image: url("data:image/svg+xml,%3Csvg version='1.1' id='Capa_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 31.479 31.479' style='enable-background:new 0 0 31.479 31.479;' xml:space='preserve'%3E%3Cpath style='fill:%23FFFFFF;' d='M26.477,10.274c0.444,0.444,0.444,1.143,0,1.587c-0.429,0.429-1.143,0.429-1.571,0l-8.047-8.047 v26.555c0,0.619-0.492,1.111-1.111,1.111c-0.619,0-1.127-0.492-1.127-1.111V3.813l-8.031,8.047c-0.444,0.429-1.159,0.429-1.587,0 c-0.444-0.444-0.444-1.143,0-1.587l9.952-9.952c0.429-0.429,1.143-0.429,1.571,0L26.477,10.274z'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 20px;
+  background-size: 2em;
   cursor: pointer;
   opacity: 0;
   z-index: -1;

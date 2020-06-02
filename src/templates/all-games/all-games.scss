@@ -1,5 +1,5 @@
 .all-games {
-  padding: 30px;
+  padding: 3em;
 }
 
 .all-games__title {
@@ -10,20 +10,22 @@
 
 .all-games__title_btn {
   .btn {
-    border-radius: 25px;
-    font-size: 15px;
+    border-radius: 2.5em;
     text-transform: uppercase;
+    span {
+      font-size: 1.5em;
+    }
   }
 }
 
 .all-games__list {
   display: flex;
   flex-wrap: wrap;
-  margin: -15px;
-  padding: 30px 0;
+  margin: -1.5em;
+  padding: 3em 0;
   .card {
-    width: calc(20% - 30px);
-    margin: 15px;
+    width: calc(20% - 3em);
+    margin: 1.5em;
   }
 }
 
@@ -31,9 +33,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 2em;
   .btn {
     width: 100%;
-    max-width: 300px;
+    max-width: 30em;
   }
 }

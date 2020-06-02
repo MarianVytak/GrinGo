@@ -3,8 +3,8 @@
   -ms-grid-columns: auto minmax(0, 1fr);
   display: grid;
   grid-template-columns: auto minmax(0, 1fr);
-  margin-right: -130px;
-  padding: 15px 30px;
+  margin-right: -13em;
+  padding: 1.5em 3em;
   background-color: #171921;
 }
 
@@ -13,25 +13,27 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-right: 50px;
+  margin-right: 5em;
   font-family: 'SF Pro Display Meduim', sans-serif;
-  font-size: 23px;
   color: $white;
   white-space: nowrap;
+  span {
+    font-size: 2.3em;
+  }
   img {
-    min-width: 45px;
-    min-height: 60px;
+    min-width: 4.5em;
+    min-height: 6em;
   }
 }
 
 .section-2__slider {
   -ms-grid-column: 2;
   .slick-list {
-    margin: 0 -10px;
+    margin: 0 -1em;
   }
   .slick-slide {
-    max-width: 260px;
-    padding: 0 10px;
+    max-width: 26em;
+    padding: 0 1em;
     &:focus {
       outline: none;
     }
@@ -47,8 +49,8 @@
   display: flex !important;
   align-items: center;
   justify-content: space-between;
-  padding: 10px;
-  border-radius: 10px;
+  padding: 1em;
+  border-radius: 1em;
   border: 1px solid $green;
   box-sizing: border-box;
   &.yellow {
@@ -96,11 +98,11 @@
 }
 
 .section-2__slider_item_img {
-  width: 60px;
-  min-width: 60px;
-  height: 60px;
+  width: 6em;
+  min-width: 6em;
+  height: 6em;
   border-radius: 50%;
-  border: 3px solid $green;
+  border: 0.3em solid $green;
   box-sizing: border-box;
   overflow: hidden;
   img {
@@ -111,15 +113,17 @@
 }
 
 .section-2__slider_item_name {
-  margin: 0 10px;
+  margin: 0 1em;
   font-family: 'SF Pro Display Bold', sans-serif;
-  font-size: 15px;
   color: #c2c5c8;
+  span {
+    font-size: 1.5em;
+  }
 }
 
 .section-2__slider_item_label {
   display: block;
-  font-size: 13px;
+  font-size: 1.3em;
   color: #b1b1b1;
   white-space: nowrap;
 }
@@ -128,17 +132,17 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  margin-top: 5px;
+  margin-top: 0.5em;
 }
 
 .section-2__slider_item_percent_value {
   font-family: 'SF Pro Display Bold', sans-serif;
-  font-size: 23px;
+  font-size: 2.3em;
   color: $white;
 }
 
 .section-2__slider_item_percent_icon {
-  width: 15px;
-  margin-left: 5px;
+  width: 1.5em;
+  margin-left: 0.5em;
   fill: $green;
 }

@@ -1,6 +1,6 @@
 .section-1 {
-  margin-right: -130px;
-  padding: 85px 0 15px;
+  margin-right: -13em;
+  padding: 8.5em 0 1.5em;
 }
 
 .section-1__slider {
@@ -17,7 +17,7 @@
 
 .section-1__slider_item {
   position: relative;
-  padding: 45px 90px;
+  padding: 4.5em 9em;
   box-sizing: border-box;
   background-image: url(../../assets/img/banner.jpg);
   background-repeat: no-repeat;
@@ -30,28 +30,32 @@
 
 .section-1__slider_subtitle {
   font-family: 'SF Pro Display Meduim', sans-serif;
-  font-size: 45px;
+  font-size: 4.5em;
   color: rgba($white, .7);
 }
 
 .section-1__slider_title {
   font-family: 'SF Pro Display Bold', sans-serif;
-  font-size: 60px;
+  font-size: 6em;
   color: $white;
 }
 
 .section-1__slider_desc {
-  margin-top: 15px;
-  font-size: 22px;
+  margin-top: 1.5em;
   color: rgba($white, .6);
+  span {
+    font-size: 2.2em;
+  }
 }
 
 .section-1__slider_btn {
-  margin-top: 30px;
+  margin-top: 3em;
   .btn {
-    width: 300px;
-    height: 70px;
-    border-radius: 35px;
-    font-size: 21px;
+    width: 30em;
+    height: 7em;
+    border-radius: 3.5em;
+    span {
+      font-size: 2.1em;
+    }
   }
 }

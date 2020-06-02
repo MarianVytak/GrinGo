@@ -1,20 +1,22 @@
 .footer {
-  padding: 0 30px;
+  padding: 0 3em;
 }
 
 .footer__lvl1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 45px 0;
+  padding: 4.5em 0;
   border-top: 1px solid $gray;
 }
 
 .footer__lvl1_link {
-  margin-right: 20px;
+  margin-right: 2em;
   font-family: 'SF Pro Display Meduim', sans-serif;
-  font-size: 18px;
   color: $gray;
+  span {
+    font-size: 1.8em;
+  }
   &:last-child {
     margin-right: 0;
   }
@@ -27,7 +29,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px 0 25px;
+  padding: 2em 0 2.5em;
   border-top: 1px solid $gray;
   .footer__icons {
     width: 100%;
@@ -35,9 +37,11 @@
 }
 
 .footer__icons_title {
-  margin-bottom: 15px;
-  font-size: 16px;
+  margin-bottom: 1.5em;
   color: rgba($white, .6);
+  span {
+    font-size: 1.6em;
+  }
 }
 
 .footer__icons_list {
@@ -47,7 +51,7 @@
 }
 
 .footer__icons_list_item {
-  margin-right: 20px;
+  margin-right: 2em;
   transition: .3s;
   filter: grayscale(1);
   &:last-child {
@@ -62,15 +66,15 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 25px 0;
+  padding: 2.5em 0;
   border-top: 1px solid $gray;
   .footer__icons_list {
-    margin-right: 65px;
+    margin-right: 6.5em;
   }
 }
 
 .footer__text {
-  font-size: 18px;
+  font-size: 1.8em;
   color: rgba($white, .3);
 }
 
@@ -78,7 +82,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 0 60px;
+  padding: 4em 0 6em;
   border-top: 1px solid $gray;
 }
 
@@ -90,12 +94,12 @@
 }
 
 .footer__logo_img {
-  width: 60px;
+  width: 6em;
   filter: grayscale(1);
 }
 
 .footer__logo_text {
-  font-size: 23px;
+  font-size: 2.3em;
   color: rgba($white, .5);
   b {
     font-family: 'SF Pro Display Bold', sans-serif;
@@ -107,7 +111,6 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  font-size: 18px;
   color: rgba($white, .3);
   text-align: center;
 }
@@ -123,14 +126,16 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
-  margin-right: 20px;
+  width: 4em;
+  height: 4em;
+  margin-right: 2em;
   border-radius: 50%;
-  border: solid 3px #8f9095;
+  border: solid 0.3em #8f9095;
   background-color: #e2e2e2;
   box-sizing: border-box;
   font-family: 'SF Pro Display Bold', sans-serif;
-  font-size: 16px;
   color: #45464b;
+  span {
+    font-size: 1.6em;
+  }
 }

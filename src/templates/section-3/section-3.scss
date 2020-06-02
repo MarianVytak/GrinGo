@@ -1,6 +1,6 @@
 .section-3 {
-  margin-right: -130px;
-  padding: 25px 0 50px;
+  margin-right: -13em;
+  padding: 2.5em 0 5em;
 }
 
 .section-3__list {
@@ -11,7 +11,7 @@
 
 .section-3__list_item {
   position: relative;
-  margin-right: 80px;
+  margin-right: 8em;
   &:last-child {
     margin-right: 0;
   }
@@ -38,12 +38,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80px;
-  height: 80px;
-  border-radius: 25px;
+  width: 8em;
+  height: 8em;
+  border-radius: 2.5em;
   border: solid 1px #363c42;
   background-color: #14191e;
   img {
+    max-width: 4em;
+    max-height: 4em;
     filter: grayscale(1);
     transition: .3s;
   }
@@ -52,12 +54,14 @@
 .section-3__list_item_title {
   position: absolute;
   left: 50%;
-  bottom: -15px;
+  bottom: -1.5em;
   transform: translate(-50%, 100%);
   font-family: 'SF Pro Display Meduim', sans-serif;
-  font-size: 15px;
   color: $white;
   text-align: center;
   white-space: nowrap;
   transition: .3s;
+  span {
+    font-size: 1.5em;
+  }
 }
