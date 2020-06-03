@@ -16,10 +16,10 @@
 .check__box {
   position: relative;
   display: inline-block;
-  width: 20px;
-  height: 20px;
-  margin-right: 10px;
-  border-radius: 2px;
+  width: 2em;
+  height: 2em;
+  margin-right: 1em;
+  border-radius: 0.2em;
   border: 1px solid #a3a7ac;
   box-sizing: border-box;
   transition: .3s;
@@ -30,8 +30,8 @@
     left: 50%;
     transform: translate(-50%, -75%) rotate(-45deg);
     display: none;
-    width: 12px;
-    height: 8px;
+    width: 1.2em;
+    height: 0.8em;
     border: 1px solid transparent;
     border-left-color: $white;
     border-bottom-color: $white;
@@ -54,7 +54,7 @@
 }
 
 .checkbox__label {
-  font-size: 15px;
+  font-size: 1.5em;
   color: #909397;
   white-space: nowrap;
   transition: .3s;

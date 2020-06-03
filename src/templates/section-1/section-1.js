@@ -12,6 +12,7 @@ $('.section-1__slider').slick({
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     arrows: false,
+                    fade: true,
                     centerPadding: '0'
                 }
             }

@@ -26,13 +26,31 @@ $(function () {
     });
 
     $('.section__slider-4').slick({
-        slidesToShow: 4,
+        slidesToShow: 6,
         slidesToScroll: 1,
         infinite: true,
         fade: false,
         arrows: true,
         dots: false,
             responsive: [
+                {
+                    breakpoint: 2000,
+                    settings: {
+                        slidesToShow: 5,
+                    }
+                },
+                {
+                    breakpoint: 1500,
+                    settings: {
+                        slidesToShow: 4,
+                    }
+                },
+                {
+                    breakpoint: 1000,
+                    settings: {
+                        slidesToShow: 3,
+                    }
+                },
                 {
                     breakpoint: 768,
                     settings: {
@@ -47,13 +65,31 @@ $(function () {
     });
 
     $('.section__slider-5').slick({
-        slidesToShow: 5,
+        slidesToShow: 7,
         slidesToScroll: 1,
         infinite: true,
         fade: false,
         arrows: true,
         dots: false,
         responsive: [
+            {
+                breakpoint: 2000,
+                settings: {
+                    slidesToShow: 6,
+                }
+            },
+            {
+                breakpoint: 1500,
+                settings: {
+                    slidesToShow: 5,
+                }
+            },
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 4,
+                }
+            },
             {
                 breakpoint: 768,
                 settings: {
@@ -68,13 +104,31 @@ $(function () {
     });
 
     $('.section__slider-6').slick({
-        slidesToShow: 6,
+        slidesToShow: 8,
         slidesToScroll: 1,
         infinite: true,
         fade: false,
         arrows: true,
         dots: false,
         responsive: [
+            {
+                breakpoint: 2000,
+                settings: {
+                    slidesToShow: 7,
+                }
+            },
+            {
+                breakpoint: 1500,
+                settings: {
+                    slidesToShow: 6,
+                }
+            },
+            {
+                breakpoint: 1000,
+                settings: {
+                    slidesToShow: 5,
+                }
+            },
             {
                 breakpoint: 768,
                 settings: {

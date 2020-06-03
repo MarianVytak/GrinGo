@@ -1,21 +1,22 @@
 .modal-search {
   display: none;
   width: 100%;
-  max-width: 760px;
+  max-width: 76em;
   padding: 0;
   box-sizing: border-box;
-  border-radius: 15px;
+  border-radius: 1.5em;
   border: solid 1px #353b44;
   background-color: #212633;
   cursor: default !important;
   .fancybox-button {
-    top: 30px;
-    right: 30px;
-    width: 30px;
-    height: 30px;
+    top: 3em;
+    right: 3em;
+    width: 3em;
+    height: 3em;
     padding: 0;
     border: 1px solid $gray;
     border-radius: 50%;
+    font-size: 1em;
     transition: .3s;
     &:hover {
       border-color: $white;
@@ -37,23 +38,22 @@
 .modal-search__input {
   position: relative;
   display: block;
-  height: 90px;
+  height: 9em;
+  padding: 0 8.5em;
   box-sizing: border-box;
   input {
     height: 100%;
     width: 100%;
-    padding: 0 85px;
     box-sizing: border-box;
     border-radius: 0;
     border: none;
     outline: none;
     background-color: transparent;
     font-family: 'SF Pro Display Semibold', sans-serif;
-    font-size: 35px;
-    color: #5f6368;
+    font-size: 3.5em;
+    color: $white;
     &::placeholder {
       font-family: 'SF Pro Display Semibold', sans-serif;
-      font-size: 35px;
       color: #5f6368;
     }
   }
@@ -62,17 +62,17 @@
 .modal-search__input_icon {
   position: absolute;
   top: 50%;
-  left: 30px;
+  left: 3em;
   transform: translateY(-50%);
-  width: 25px;
+  width: 2.5em;
   filter: opacity(.4);
 }
 
 .modal-search__settings {
   display: -ms-grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1.5fr 60px;
+  -ms-grid-columns: 1fr 1fr 1fr 1.5fr 6em;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1.5fr 60px;
+  grid-template-columns: 1fr 1fr 1fr 1.5fr 6em;
 }
 
 .modal-search__settings_item {
@@ -101,14 +101,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60px;
+  height: 4em;
   box-sizing: border-box;
   border-top: 1px solid #32373e;
   border-bottom: 1px solid #32373e;
   border-right: 1px solid #32373e;
   background-color: #1c202c;
   font-family: 'SF Pro Display Meduim', sans-serif;
-  font-size: 15px;
+  font-size: 1.5em;
   color: #b1b5bb;
   transition: .3s;
   &:hover {
@@ -118,20 +118,20 @@
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 7px 5px 0 5px;
+    border-width: 0.46em 0.33em 0 0.33em;
     border-color: $green transparent transparent transparent;
     margin-top: 1px;
     margin-left: 5px;
   }
   img {
-    width: 25px;
+    width: 1.66em;
   }
 }
 
 .modal-search__settings_item_link_subtitle {
-  padding-right: 10px;
+  padding-right: 0.83em;
   font-family: 'SF Pro Display', sans-serif;
-  font-size: 12px;
+  font-size: 1.2em;
   color: #787b7e;
 }
 
@@ -142,7 +142,7 @@
   left: -1px;
   transform: translateY(100%);
   min-width: calc(100% + 1px);
-  padding: 15px 20px;
+  padding: 1.5em 2em;
   box-sizing: border-box;
   border: 1px solid #32373e;
   background-color: #1c202c;
@@ -153,11 +153,11 @@
 }
 
 .modal-search__settings_list_item {
-  margin-bottom: 10px;
+  margin-bottom: 1em;
 }
 
 .modal-search__settings_list_item_link {
-  font-size: 15px;
+  font-size: 1.5em;
   color: #909397;
   transition: .3s;
   &:hover {
@@ -169,23 +169,25 @@
 }
 
 .modal-search__list {
-  padding-bottom: 30px;
+  padding-bottom: 3em;
 }
 
 .modal-search__list_item_title {
-  padding: 25px 30px 15px;
+  padding: 2.5em 3em 1.5em;
   font-family: 'SF Pro Display Semibold', sans-serif;
-  font-size: 17px;
   color: #b4b8bc;
+  span {
+    font-size: 1.7em;
+  }
 }
 
 .modal-search__list_item {
   display: -ms-grid;
-  -ms-grid-columns: 80px 1fr 35px;
+  -ms-grid-columns: 8em 1fr 3.5em;
   display: grid;
-  grid-template-columns: 80px 1fr 35px;
-  height: 60px;
-  padding: 0 50px 0 30px;
+  grid-template-columns: 8em 1fr 3.5em;
+  height: 6em;
+  padding: 0 5em 0 3em;
   transition: .3s;
   &:hover {
     background-color: rgba($white, .05);
@@ -209,8 +211,8 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  padding: 0 30px;
-  font-size: 17px;
+  padding: 0 1.8em;
+  font-size: 1.7em;
   color: #909397;
   transition: .3s;
 }

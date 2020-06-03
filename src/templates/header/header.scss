@@ -118,8 +118,8 @@
       left: 0;
       bottom: 0;
       width: 100%;
-      height: 4px;
-      border-radius: 2px 2px 0 0;
+      height: 0.22em;
+      border-radius: 0.2em 0.2em 0 0;
       background-color: $green;
     }
   }
@@ -140,10 +140,4 @@
 .header__login {
   margin-right: 2em;
   margin-left: 5em;
-}
-
-.header__register {
-  img {
-    margin-right: 1em;
-  }
 }
