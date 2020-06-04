@@ -8,9 +8,22 @@
     margin-bottom: 0;
   }
   .slick-slide {
+    position: relative;
     margin: 0 8px;
     &:focus {
       outline: none;
+    }
+    &:not(.slick-current) {
+      &:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba($black, .7);
+        z-index: 2;
+      }
     }
   }
 }
