@@ -135,8 +135,9 @@ $(function () {
                     slidesToShow: 1,
                     slidesToScroll: 1,
                     arrows: false,
-                    centerMode: true,
-                    centerPadding: '15vw',
+                    centerMode: false,
+                    centerPadding: '0',
+                    variableWidth: true,
                 }
             }
         ]

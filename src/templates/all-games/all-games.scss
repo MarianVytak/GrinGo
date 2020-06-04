@@ -1,5 +1,5 @@
 .all-games {
-  padding: 3em;
+  padding: 1.5em 3em;
 }
 
 .all-games__title {
@@ -22,7 +22,7 @@
   display: flex;
   flex-wrap: wrap;
   margin: -1.5em;
-  padding: 3em 0;
+  padding: 2em 0;
   .card {
     width: calc(20% - 3em);
     margin: 1.5em;

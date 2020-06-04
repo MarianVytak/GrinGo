@@ -8,7 +8,20 @@
 
   // Customs
   .h2 {
-    font-size: 2.3em;
+    font-size: 2em;
+  }
+  .section__slider {
+    .slick-list {
+      padding: 0;
+    }
+  }
+  .card__badge {
+    top: 0.5em;
+    right: 0.5em;
+    padding: 0.4em 0.8em;
+    span {
+      font-size: 1em;
+    }
   }
   .section__title_icon {
     width: 3em;
@@ -21,7 +34,7 @@
     display: none !important;
   }
   .section__title {
-    margin-bottom: 10px;
+    margin-bottom: 1.5em;
   }
   .check {
     &:hover {
@@ -70,6 +83,28 @@
   // Side Menu
   .side-menu {
     display: none;
+    padding: 4em 0;
+    overflow-y: auto;
+    &.active {
+      display: block;
+      width: 100%;
+      background-color: #1e212b;
+      .side-menu__list {
+        display: block;
+      }
+      .side-menu__list_item {
+        margin-bottom: 3em;
+        padding-left: 2em;
+        box-sizing: border-box;
+      }
+      .side-menu__label {
+        white-space: nowrap;
+        color: #888c8e;
+      }
+      .fast-deposit {
+        display: none;
+      }
+    }
   }
 
   // Header
@@ -226,6 +261,11 @@
     margin: 0;
     padding: 1.5em 1em;
   }
+  .section-7 {
+    .slick-slide {
+      max-width: 14em;
+    }
+  }
   .section-9__card_logo {
     img {
       max-width: 80px;
@@ -246,6 +286,18 @@
     .card {
       width: calc(50% - 1em);
       margin: 0.5em;
+    }
+  }
+  .all-games__title_btn {
+    .btn {
+      span {
+        font-size: 1.2em;
+      }
+    }
+  }
+  .all-games__btn {
+    .btn {
+      max-width: 28em;
     }
   }
 
@@ -399,4 +451,15 @@
     }
   }
 
+}
+
+@media (max-width: 380px) {
+  .header__logo_img {
+    img {
+      width: 6em;
+    }
+  }
+  .header__hamburger {
+    width: 4em;
+  }
 }

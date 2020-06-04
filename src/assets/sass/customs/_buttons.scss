@@ -29,5 +29,8 @@
     font-family: 'SF Pro Display Meduim', sans-serif;
     border: 1px solid $gray;
     background-color: transparent;
+    &:hover {
+      background-color: rgba($white, .05);
+    }
   }
 }

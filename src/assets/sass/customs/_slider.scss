@@ -7,7 +7,7 @@
   outline: none;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 2em;
+  background-size: 1.5em;
   transition: .5s;
   z-index: 2000;
   &:before {
@@ -17,13 +17,13 @@
     outline: none;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 2em;
+    background-size: 1.5em;
   }
   &:hover {
     border-color: $white;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 2em;
+    background-size: 1.5em;
     z-index: 2001;
   }
 }
@@ -81,7 +81,7 @@
 .section__slider {
   .slick-list {
     margin: 0 -1em;
-    padding: 3em 0;
+    padding: 2em 0;
   }
   .slick-slide {
     padding: 0 1em;

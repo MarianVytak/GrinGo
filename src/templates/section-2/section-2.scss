@@ -55,21 +55,22 @@
   box-sizing: border-box;
   &:hover {
     &.yellow {
-      box-shadow: 0 0 1.5em 0 rgba(254, 65, 65, 0.2);
+      border-color: #fea429;
     }
     &.orange {
-      box-shadow: 0 0 1.5em 0 rgba(254, 164, 41, 0.15);
+      border-color: #ec5a3c;
     }
     &.red {
-      box-shadow: 0 0 1.5em 0 rgba(254, 65, 65, 0.4);
+      border-color: #fe4141;
     }
     &.blue {
-      box-shadow: 0 0 1.5em 0 rgba(47, 119, 194, 0.3);
+      border-color: #3072bb;
     }
   }
   &.yellow {
-    border-color: #fea429;
+    border-color: rgba(#fea429, .3);
     background-color: #2d2a27;
+    box-shadow: 0 0 1.5em 0 rgba(254, 65, 65, 0.2);
     .section-2__slider_item_img {
       border-color: #fea429;
     }
@@ -78,8 +79,9 @@
     }
   }
   &.orange {
-    border-color: #ec5a3c;
+    border-color: rgba(#ec5a3c, .5);
     background-color: #362925;
+    box-shadow: 0 0 1.5em 0 rgba(254, 164, 41, 0.15);
     .section-2__slider_item_img {
       border-color: #ec5a3c;
     }
@@ -88,8 +90,9 @@
     }
   }
   &.red {
-    border-color: #fe4141;
+    border-color: rgba(#fe4141, .5);
     background-color: #342727;
+    box-shadow: 0 0 1.5em 0 rgba(254, 65, 65, 0.4);
     .section-2__slider_item_img {
       border-color: #fe4141;
     }
@@ -98,8 +101,9 @@
     }
   }
   &.blue {
-    border-color: #3072bb;
+    border-color: rgba(#3072bb, .5);
     background-color: #1e2c36;
+    box-shadow: 0 0 1.5em 0 rgba(47, 119, 194, 0.3);
     .section-2__slider_item_img {
       border-color: #3072bb;
     }
