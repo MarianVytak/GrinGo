@@ -126,6 +126,10 @@
     top: 50%;
     right: 1em;
     transform: translateY(-50%);
+    width: 4em;
+  }
+  .header__search_text {
+    display: none;
   }
   .header__login {
     position: fixed;
