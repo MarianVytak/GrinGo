@@ -1,0 +1,13 @@
+body {
+  .login {
+    display: none;
+  }
+  &.login-version {
+    .register {
+      display: none;
+    }
+    .login {
+      display: inherit;
+    }
+  }
+}

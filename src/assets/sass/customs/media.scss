@@ -451,6 +451,24 @@
     }
   }
 
+  body.login-version {
+    .header__logo_text {
+      display: none;
+    }
+    .header__search {
+      display: none;
+    }
+    .header__login {
+      display: none;
+    }
+    .notification {
+      display: none;
+    }
+    .user {
+      border-color: transparent;
+    }
+  }
+
 }
 
 @media (max-width: 380px) {
