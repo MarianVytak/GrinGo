@@ -263,11 +263,14 @@
   .section-9,
   {
     margin: 0;
-    padding: 1.5em 1em;
+    padding: 1em;
   }
   .section-7 {
-    .slick-slide {
-      max-width: 14em;
+    .all-games__list {
+      .card {
+        max-width: 14em;
+        min-width: 14em;
+      }
     }
   }
   .section-9__card_logo {
@@ -278,31 +281,60 @@
 
   // All Games
   .all-games {
-    padding: 3em 1em;
+    padding: 1em;
     overflow: hidden;
     .section__title {
       margin-bottom: 0;
     }
   }
   .all-games__list {
+    overflow-x: auto;
+    flex-wrap: nowrap;
     margin: 0 -1em;
-    padding: 1.5em 0.5em;
+    padding: 0 0.5em 1em;
     .card {
-      width: calc(50% - 1em);
+      display: block !important;
+      min-width: 20em;
       margin: 0.5em;
+      &:hover {
+        transform: none;
+      }
+      &:last-child {
+        padding-right: 1em;
+        .card__badge {
+          right: 1.5em;
+        }
+      }
+      .card__overflow {
+        display: none;
+      }
+      .card__play {
+        display: none;
+      }
+      .card__demo {
+        display: none;
+      }
     }
+  }
+  .all-games__title {
+    margin-bottom: 1em;
   }
   .all-games__title_btn {
     .btn {
+      height: 3em;
       span {
         font-size: 1.2em;
       }
     }
   }
   .all-games__btn {
+    margin-top: 1em;
     .btn {
       max-width: 28em;
     }
+  }
+  .view-all {
+    display: none;
   }
 
   // Footer

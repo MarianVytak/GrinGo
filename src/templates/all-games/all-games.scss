@@ -24,8 +24,8 @@
   margin: -1.5em;
   padding: 2em 0;
   .card {
-    width: calc(20% - 3em);
-    margin: 1.5em;
+    width: calc(100%/5 - 2em);
+    margin: 1em;
   }
 }
 
@@ -38,5 +38,31 @@
     width: 100%;
     max-width: 30em;
     text-transform: uppercase;
+  }
+}
+
+@media (min-width: 1400px) {
+  .all-games {
+    .all-games__list {
+      .card {
+        width: calc(100%/6 - 2em);
+        &:nth-child(-n+6) {
+          display: block !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 2000px) {
+  .all-games {
+    .all-games__list {
+      .card {
+        width: calc(100%/7 - 2em);
+        &:nth-child(-n+7) {
+          display: block !important;
+        }
+      }
+    }
   }
 }

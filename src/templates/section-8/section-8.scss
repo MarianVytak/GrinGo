@@ -1,3 +1,38 @@
 .section-8 {
   padding: 1.5em 3em;
+  .all-games__list {
+    .card {
+      width: calc(100%/5 - 2em);
+      display: none;
+      &:nth-child(-n+5) {
+        display: block !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .section-8 {
+    .all-games__list {
+      .card {
+        width: calc(100%/6 - 2em);
+        &:nth-child(-n+6) {
+          display: block !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 2000px) {
+  .section-8 {
+    .all-games__list {
+      .card {
+        width: calc(100%/7 - 2em);
+        &:nth-child(-n+7) {
+          display: block !important;
+        }
+      }
+    }
+  }
 }

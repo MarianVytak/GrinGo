@@ -1,4 +1,39 @@
 .section-4 {
   margin-right: -10em;
   padding: 0 6em 0 3em;
+  .all-games__list {
+    .card {
+      width: calc(100%/4 - 2em);
+      display: none;
+      &:nth-child(-n+4) {
+        display: block !important;
+      }
+    }
+  }
+}
+
+@media (min-width: 1400px) {
+  .section-4 {
+    .all-games__list {
+      .card {
+        width: calc(100%/5 - 2em);
+        &:nth-child(-n+5) {
+          display: block !important;
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 2000px) {
+  .section-4 {
+    .all-games__list {
+      .card {
+        width: calc(100%/6 - 2em);
+        &:nth-child(-n+6) {
+          display: block !important;
+        }
+      }
+    }
+  }
 }
