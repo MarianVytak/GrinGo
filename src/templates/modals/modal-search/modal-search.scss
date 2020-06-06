@@ -114,15 +114,6 @@
   &:hover {
     background-color: #161a23;
   }
-  .arrow {
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 0.46em 0.33em 0 0.33em;
-    border-color: $green transparent transparent transparent;
-    margin-top: 1px;
-    margin-left: 5px;
-  }
   img {
     width: 1.66em;
   }
@@ -133,39 +124,6 @@
   font-family: 'SF Pro Display', sans-serif;
   font-size: 1.2em;
   color: #787b7e;
-}
-
-.modal-search__settings_item_content {
-  display: none;
-  position: absolute;
-  bottom: 1px;
-  left: -1px;
-  transform: translateY(100%);
-  min-width: calc(100% + 1px);
-  padding: 1.5em 2em;
-  box-sizing: border-box;
-  border: 1px solid #32373e;
-  background-color: #1c202c;
-  z-index: 2;
-  &.active {
-    display: block;
-  }
-}
-
-.modal-search__settings_list_item {
-  margin-bottom: 1em;
-}
-
-.modal-search__settings_list_item_link {
-  font-size: 1.5em;
-  color: #909397;
-  transition: .3s;
-  &:hover {
-    color: $white;
-  }
-  &.active {
-    color: $white;
-  }
 }
 
 .modal-search__list {

@@ -81,27 +81,33 @@ $(function () {
             dropdownContent.removeClass('active');
             $(thisDropdownContent).addClass('active');
         }
+        $(document).mouseup(function (e) {
+            let container = $('.dropdown');
+            if (container.has(e.target).length === 0){
+                dropdownContent.removeClass('active');
+                $(thisDropdownContent).removeClass('active');
+            }
+        });
     });
 
 
 
     // Sort Label
     let sortLabel = $('.sort-label');
-    let sortItem = $('.modal-search__settings_list_item_link');
+    let sortItem = $('.dropdown__content_list_item_link');
 
     sortItem.on('click', function (e) {
         e.preventDefault();
         let sortItemText = $(this).text();
         sortItem.removeClass('active');
         $(this).addClass('active');
-        sortLabel.text(sortItemText)
+        sortLabel.text(sortItemText);
     });
 
 
 
     // Accordion
     let accordionLink = $('.accordion__link');
-    // let accordionContent = $('.accordion__content');
 
     accordionLink.on('click', function (e) {
         e.preventDefault();
