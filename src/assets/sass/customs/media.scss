@@ -34,7 +34,7 @@
     display: none !important;
   }
   .section__title {
-    margin-bottom: 1.5em;
+    margin-bottom: 0.5em;
   }
   .check {
     &:hover {
@@ -96,6 +96,9 @@
         margin-bottom: 3em;
         padding-left: 2em;
         box-sizing: border-box;
+        &:last-child {
+          margin-bottom: 0;
+        }
       }
       .side-menu__label {
         white-space: nowrap;

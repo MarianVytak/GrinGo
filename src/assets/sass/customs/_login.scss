@@ -2,12 +2,50 @@ body {
   .login {
     display: none;
   }
+  .side-menu__mobile {
+    &.register {
+      display: none;
+    }
+  }
   &.login-version {
     .register {
       display: none;
     }
     .login {
       display: inherit;
+    }
+  }
+  &.login-version {
+    .side-menu__mobile {
+      &.register {
+        display: none;
+      }
+      &.login {
+        display: none;
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  body {
+    .side-menu__mobile {
+      &.register {
+        display: block;
+      }
+      &.login {
+        display: none;
+      }
+    }
+    &.login-version {
+      .side-menu__mobile {
+        &.register {
+          display: none;
+        }
+        &.login {
+          display: inherit;
+        }
+      }
     }
   }
 }
