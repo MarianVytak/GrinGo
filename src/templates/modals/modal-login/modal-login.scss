@@ -1,0 +1,119 @@
+.modal-login {
+  display: none;
+  width: 100%;
+  max-width: 52em;
+  padding: 5em 5em 1em;
+  box-sizing: border-box;
+  border-radius: 1.5em;
+  backdrop-filter: blur(1.5em);
+  background-color: #212633;
+  cursor: default !important;
+  overflow: initial;
+  .form-title {
+    text-align: left;
+  }
+  .btn {
+    width: 25em;
+  }
+  .fancybox-button {
+    top: 0;
+    right: 0;
+    transform: translate(50%, -50%);
+    width: 4em;
+    height: 4em;
+    padding: 0;
+    border-radius: 50%;
+    background-color: #4a4a4a;
+    font-size: 1em;
+    transition: .3s;
+    &:hover {
+      background-color: #232930;
+    }
+    svg {
+      path {
+        fill: $white;
+        transition: .3s;
+      }
+    }
+  }
+}
+
+.modal-login__head {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.modal-login__head_left_logo {
+  margin-right: 1.5em;
+  img {
+    width: 7.5em;
+  }
+}
+
+.modal-login__subtitle {
+  margin-top: 0.5em;
+  font-family: 'SF Pro Display Meduim', sans-serif;
+  font-size: 1.7em;
+  color: rgba($white, .6);
+  line-height: 1;
+}
+
+.modal-login__social {
+  position: relative;
+  margin-top: 2.5em;
+  padding: 2.5em 0 2em;
+  border-top: 1px solid #363e47;
+}
+
+.modal-login__social_title {
+  position: absolute;
+  top: -1.2em;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0 1.5em;
+  background-color: #212633;
+  font-family: 'SF Pro Display Meduim', sans-serif;
+  color: rgba($white, .6);
+  white-space: nowrap;
+  span {
+    font-size: 1.7em;
+  }
+}
+
+.modal-login__social_list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-login__social_list_link {
+  margin-right: 4em;
+  &:last-child {
+    margin-right: 0;
+  }
+  img {
+    width: 5em;
+  }
+}
+
+
+
+@media (max-width: 767.98px) {
+  .modal-login {
+    padding: 2em 1em 1em;
+    .fancybox-button {
+      top: 1em;
+      right: 1em;
+      transform: none;
+      width: 2em;
+      height: 2em;
+    }
+  }
+  .modal-login__subtitle {
+    font-size: 1.3em;
+  }
+  .modal-login__head_left_logo {
+    margin-right: 0.5em;
+  }
+}

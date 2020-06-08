@@ -1,0 +1,127 @@
+.form {
+  margin-top: 4em;
+}
+
+.form-title {
+  font-family: 'SF Pro Display Semibold', sans-serif;
+  font-size: 2.5em;
+  color: $white;
+  text-align: center;
+  line-height: 1;
+}
+
+.form-group {
+  margin-bottom: 3.5em;
+}
+
+.input-label {
+  margin-bottom: 0.3em;
+  font-family: 'SF Pro Display Meduim', sans-serif;
+  font-size: 1.5em;
+  color: $white;
+}
+
+.input {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 6em;
+}
+
+input {
+  width: 100%;
+  height: 100%;
+  padding: 0 0.9em 0 1.2em;
+  box-sizing: border-box;
+  border-radius: 0.5em;
+  border: 2px solid #303942;
+  background-color: #1a212a;
+  font-family: 'SF Pro Display Meduim', sans-serif;
+  font-size: 1.7em;
+  color: $white;
+  &::placeholder {
+    color: rgba($white, .3);
+  }
+  &:focus {
+    border-color: #8497a1;
+    outline: none;
+    background-color: #12171e;
+  }
+  &[type='password'] {
+    padding: 0 6.5em 0 1.2em;
+  }
+}
+
+.password-btn {
+  position: absolute;
+  top: 50%;
+  right: 1.5em;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 8em;
+  height: 3em;
+  border-radius: 0.5em;
+  background-color: #2a323a;
+  font-family: 'SF Pro Display Meduim', sans-serif;
+  font-size: 1em;
+  color: rgba($white, .2);
+  span {
+    font-size: 1.4em;
+  }
+}
+
+.form-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2.5em;
+  border-top: 1px solid #363e47;
+  .btn {
+    height: 6em;
+    border-radius: 1em;
+    background-color: #2d3741;
+    font-size: 1em;
+    color: rgba($white, .5);
+    &:hover {
+      background-color: $green;
+      color: $white;
+    }
+    span {
+      font-size: 1.7em;
+    }
+  }
+}
+
+.form-account {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.7em;
+}
+
+.form-account__title {
+  margin-right: 0.8em;
+  font-family: 'SF Pro Display Meduim', sans-serif;
+  color: rgba($white, .3);
+}
+
+.form-account__link {
+  font-family: 'SF Pro Display Semibold', sans-serif;
+  color: $green;
+}
+
+
+
+@media (max-width: 767.98px) {
+  .form-title {
+    font-size: 1.8em;
+  }
+  input {
+    font-size: 1.5em;
+  }
+  .form-account {
+    font-size: 1.5em;
+  }
+}
