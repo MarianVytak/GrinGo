@@ -151,6 +151,9 @@
     &.btn-outline {
       border: none;
       background-color: #3b444d;
+      &:hover {
+        background-color: #3b444d;
+      }
     }
   }
   .header__register {
