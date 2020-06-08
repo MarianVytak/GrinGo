@@ -11,12 +11,3 @@ $(document).on('scroll', function () {
         scrollSection3.removeClass('active');
     }
 });
-// $(window).scroll(function(){
-//     let thisScroll = $(this).scrollTop();
-//     if (thisScroll >= headerHeight) {
-//         scrollSection3.removeClass('active');
-//     }
-//     else {
-//         scrollSection3.addClass('active');
-//     }
-// });

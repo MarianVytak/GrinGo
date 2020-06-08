@@ -78,6 +78,7 @@
       bottom: auto;
       left: auto;
       transform: none;
+      display: block;
       width: auto;
       padding: 0;
       background-color: transparent;
@@ -86,7 +87,7 @@
       color: #888c8e;
       text-align: left;
       white-space: normal;
-      opacity: 1;
+      //opacity: 1;
       &:before {
         display: none;
       }
@@ -133,7 +134,8 @@
   width: 100%;
   &:hover {
     .side-menu__label {
-      opacity: 1;
+      //opacity: 1;
+      display: block;
     }
   }
 }
@@ -148,6 +150,7 @@
   top: 50%;
   right: 0;
   transform: translate(100%, -50%);
+  display: none;
   width: min-content;
   padding: 0.2em 0.5em;
   border-radius: 0.3em;
@@ -156,7 +159,7 @@
   font-size: 1.4em;
   color: #1e212b;
   white-space: nowrap;
-  opacity: 0;
+  //opacity: 0;
   transition: .3s;
   &:before {
     content: '';
