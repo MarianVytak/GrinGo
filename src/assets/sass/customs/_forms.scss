@@ -72,7 +72,7 @@ input {
     outline: none;
     background-color: #12171e;
   }
-  &[type='password'] {
+  &.password {
     padding: 0 6.5em 0 1.2em;
   }
 }

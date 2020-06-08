@@ -101,3 +101,62 @@
     border-radius: 0.5em 0.5em 0 0;
   }
 }
+
+.form-registration__social {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 3em;
+}
+
+.form-registration__social_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 12em;
+  height: 5em;
+  padding: 0 1em;
+  box-sizing: border-box;
+  border-radius: 1em;
+  font-family: 'SF Pro Display Semibold', sans-serif;
+  color: $white;
+  img {
+    max-width: 1.5em;
+    max-height: 2em;
+    margin-right: 1em;
+  }
+  span {
+    font-size: 1.5em;
+  }
+  &.vk {
+    background-color: #1976d2;
+    &:hover {
+      background-color: darken(#1976d2, 10);
+    }
+  }
+  &.fb {
+    background-color: #3f51b5;
+    &:hover {
+      background-color: darken(#3f51b5, 10);
+    }
+  }
+  &.od {
+    background-color: #e1880e;
+    &:hover {
+      background-color: darken(#e1880e, 10);
+    }
+  }
+}
+
+.modal-registration__password {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.modal-registration__password_item {
+  width: 100%;
+  &:first-child {
+    margin-right: 1em;
+  }
+}
