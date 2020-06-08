@@ -19,7 +19,7 @@
 
 .modal-grid__right {
   -ms-grid-column: 2;
-  padding: 5em 5em 1em;
+  padding: 5em 5em 1.5em;
   backdrop-filter: blur(1.5em);
   background-color: #212633;
 }
@@ -59,3 +59,4 @@
 @import "modal-search/modal-search";
 @import "modal-login/modal-login";
 @import "modal-verification/modal-verification";
+@import "modal-registration/modal-registration";
