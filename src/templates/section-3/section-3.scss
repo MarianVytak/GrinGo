@@ -1,5 +1,4 @@
 .section-3 {
-  margin-right: -13em;
   padding: 2.5em 3em 5em;
   box-sizing: border-box;
   transition: padding .3s;
@@ -8,9 +7,12 @@
     top: 7em;
     left: 0;
     width: 100%;
-    padding: 1em 3em 1em 9em;
+    padding: 0 3em 0.5em 9em;
     background-color: #212730;
     z-index: 7777;
+    .section-3__list {
+      height: 6em;
+    }
   }
   .dropdown__content {
     border-color: rgba(#38414b, .2);

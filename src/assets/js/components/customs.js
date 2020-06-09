@@ -29,19 +29,19 @@ $(function () {
 
     // View All Cards
     const viewAll = $('.view-all__link');
-    const viewAllText = $('.view-all__text');
 
     viewAll.on('click', function (e) {
         e.preventDefault();
         let thisViewAll = $(this).attr('href');
+        let thisViewAllText = $(this).children('.view-all__text');
         if ($(this).hasClass('active')) {
             $(this).removeClass('active');
             $(thisViewAll + ' ' + '.card').hide();
-            viewAllText.text('Показать больше');
+            thisViewAllText.text('Показать больше');
         } else {
             $(this).addClass('active');
             $(thisViewAll + ' ' + '.card').show();
-            viewAllText.text('Показать меньше');
+            thisViewAllText.text('Показать меньше');
         }
     });
 
@@ -56,7 +56,7 @@ $(function () {
         }, 2000);
     });
     $(document).on('scroll', function () {
-        const scrollTopStart = $('.section-5').offset().top;
+        const scrollTopStart = $('.all-games').offset().top;
 
         if (scrollTop.offset().top >= scrollTopStart) {
             scrollTop.addClass('active');

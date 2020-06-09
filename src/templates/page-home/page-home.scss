@@ -1,16 +1,15 @@
 .page-home {
   position: relative;
   padding-left: 7em;
-  padding-right: 9em;
   overflow: hidden;
 }
 
 .scroll-top {
   position: fixed;
   bottom: 25em;
-  right: 2em;
-  width: 7em;
-  height: 7em;
+  right: 3em;
+  width: 4em;
+  height: 4em;
   box-sizing: border-box;
   border-radius: 50%;
   background-color: rgba($white, .1);
@@ -23,6 +22,6 @@
   z-index: -1;
   &.active {
     opacity: 1;
-    z-index: 2;
+    z-index: 7777;
   }
 }

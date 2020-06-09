@@ -150,9 +150,9 @@
 
     &.btn-outline {
       border: none;
-      background-color: #3b444d;
+      background-color: #3b424d;
       &:hover {
-        background-color: #3b444d;
+        background-color: #3b424d;
       }
     }
   }
@@ -277,6 +277,7 @@
     border: 1px solid rgba(#38414b, .2);
     background-color: rgba($black, .2);
     &.active {
+      height: 4em;
       padding: 0;
     }
   }
