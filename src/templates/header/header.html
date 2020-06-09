@@ -60,18 +60,67 @@
             <img src="../../assets/img/svg/more.svg" alt="">
             <span>Пополнить</span>
         </a>
-        <div class="user login">
-            <div class="user__level">
-                <div class="user__level_value">5 Ур.</div>
-                <div class="user__level_percent">25%</div>
-            </div>
-            <div class="user__account">1,120,452.34₽</div>
-            <div class="user__icon">
-                <span>MV</span>
-                <div class="user__icon_progress"></div>
+        <div class="user__dropdown dropdown">
+            <a href="#user-dropdown" class="user login js-dropdown-link">
+                <div class="user__level">
+                    <div class="user__level_value">5 Ур.</div>
+                    <div class="user__level_percent">25%</div>
+                </div>
+                <div class="user__account">1,120,452.34₽</div>
+                <div class="user__icon">
+                    <span>MV</span>
+                    <div class="user__icon_progress"></div>
+                </div>
+            </a>
+            <!-- /.user -->
+            <div class="user__content dropdown__content js-dropdown-content" id="user-dropdown">
+                <div class="user__content_title">
+                    <span>Привет, Denis!</span>
+                </div>
+                <ul class="user__content_list">
+                    <li class="user__content_item">
+                        <a href="#" class="user__content_link">Мой профиль</a>
+                    </li>
+                    <li class="user__content_item">
+                        <a href="#" class="user__content_link">Избранные игры</a>
+                    </li>
+                    <li class="user__content_item">
+                        <a href="#" class="user__content_link">Мои бонусы</a>
+                    </li>
+                    <li class="user__content_item">
+                        <a href="#" class="user__content_link">Мои награды</a>
+                    </li>
+                    <li class="user__content_item">
+                        <a href="#" class="user__content_link">Депозит</a>
+                    </li>
+                    <li class="user__content_item">
+                        <a href="#" class="user__content_link">Вывод</a>
+                    </li>
+                    <li class="user__content_item">
+                        <a href="#" class="user__content_link">История платежей</a>
+                    </li>
+                </ul>
+                <div class="user__content_info">
+                    <div class="user__content_info_left">
+                        <div class="user__content_info_title">Программа лояльности</div>
+                        <div class="user__content_info_desc">
+                            Невероятные призы от Гринго за каждый новый уровень!
+                        </div>
+                    </div>
+                    <div class="user__content_info_icon">
+                        <div class="box">
+                            <div class="user__content_info_level">5 Ур.</div>
+                            <div class="user__content_info_percentage">25%</div>
+                        </div>
+                        <div class="user__content_info_progress"></div>
+                    </div>
+                </div>
+                <div class="user__content_logout">
+                    <a href="#" class="user__content_logout_link">Выйти</a>
+                </div>
             </div>
         </div>
-        <!-- /.user -->
+        <!-- /.user__dropdown -->
         <div class="notification login dropdown">
             <a href="#notification-content" class="notification__link js-dropdown-link">
                 <div class="notification__icon">
@@ -79,7 +128,7 @@
                 </div>
                 <div class="notification__badge"><span>8</span></div>
             </a>
-            <div class="notification__content dropdown__content" id="notification-content">
+            <div class="notification__content dropdown__content js-dropdown-content" id="notification-content">
                 <div class="notification__content_title"><span>Уведомления</span></div>
                 <ul class="notification__content_list">
                     <li class="notification__content_list_item v-1">

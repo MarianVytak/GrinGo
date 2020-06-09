@@ -173,6 +173,7 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
+  text-align: right;
 }
 
 .user__level_value {
@@ -182,7 +183,6 @@
 }
 
 .user__level_percent {
-  width: 100%;
   font-family: 'SF Pro Display Light', sans-serif;
   font-size: 1.4em;
   color: rgba($white, .7);
@@ -262,6 +262,7 @@
   left: auto;
   right: -1em;
   width: 40em;
+  min-width: auto;
   padding: 2em 0;
   border-radius: 1em;
   border: none;
@@ -269,13 +270,13 @@
   &:before {
     content: '';
     position: absolute;
-    top: 0;
+    top: 2px;
     right: 1.2em;
     transform: translateY(-100%);
     width: 0;
     height: 0;
     border-style: solid;
-    border-width: 0 2em 1em 1em;
+    border-width: 0 1.5em 1.5em 1.5em;
     border-color: transparent transparent #212730 transparent;
 
   }
@@ -347,5 +348,136 @@
   line-height: 1.38;
   .link {
     color: $green;
+  }
+}
+
+.user__content {
+  position: absolute;
+  bottom: -1.7em;
+  left: auto;
+  right: -4em;
+  width: 40em;
+  min-width: auto;
+  padding: 0;
+  border-radius: 1em;
+  border: none;
+  background-color: #212730;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    right: 4.8em;
+    transform: translateY(-100%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 1.5em 1.5em 1.5em;
+    border-color: transparent transparent #212730 transparent;
+
+  }
+}
+
+.user__content_title {
+  padding: 2.5em 2em;
+  color: rgba($white, .7);
+  span {
+    font-size: 1.7em;
+  }
+}
+
+.user__content_list {
+  padding: 2em;
+  border-top: 1px solid #363e47;
+}
+
+.user__content_item {
+  margin-bottom: 2em;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.user__content_link {
+  font-family: 'SF Pro Display Meduim', sans-serif;
+  font-size: 1.7em;
+  color: $white;
+  &:hover {
+    color: $green;
+  }
+}
+
+.user__content_info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2em;
+  border-top: 1px solid #363e47;
+}
+
+.user__content_info_left {
+  margin-right: 1.5em;
+}
+
+.user__content_info_title {
+  font-family: 'SF Pro Display Meduim', sans-serif;
+  font-size: 1.7em;
+  color: $white;
+  line-height: 1.67;
+}
+
+.user__content_info_desc {
+  font-size: 1.5em;
+  color: rgba($white, .5);
+  line-height: 1.67;
+}
+
+.user__content_info_icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 7em;
+  min-width: 7em;
+  height: 7em;
+  border-radius: 50%;
+}
+
+.user__content_info_level {
+  font-family: 'SF Pro Display Meduim', sans-serif;
+  font-size: 1.6em;
+  color: $white;
+  white-space: nowrap;
+  text-align: center;
+}
+
+.user__content_info_percentage {
+  font-family: 'SF Pro Display Light', sans-serif;
+  font-size: 1.4em;
+  color: rgba($white, .7);
+  white-space: nowrap;
+  text-align: center;
+}
+
+.user__content_info_progress {
+  position: absolute;
+  transform: rotate(-45deg);
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  border-radius: 50%;
+  border: 3px solid #4f565a;
+  border-right-color: $green;
+}
+
+.user__content_logout {
+  padding: 2em;
+  border-top: 1px solid #363e47;
+}
+
+.user__content_logout_link {
+  font-size: 1.7em;
+  color: rgba($white, .3);
+  &:hover {
+    color: $white;
   }
 }
