@@ -36,6 +36,9 @@
   &.new {
     background-image: linear-gradient(244deg, #fdc41d 105%, #fea429 23%);
   }
+  &.hot {
+    background-image: linear-gradient(256deg, #f42e3b 81%, #c82121 19%);
+  }
 }
 
 .card__overflow {
