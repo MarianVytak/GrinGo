@@ -9,3 +9,18 @@ tabLinkModal.on('click', function (e) {
     tabContentModal.removeClass('active');
     $(thisTabContentModal).addClass('active');
 });
+
+
+
+const fastDepositItem = $('.modal-deposit_grid_item');
+
+fastDepositItem.on('click', function (e) {
+    e.preventDefault();
+    if ($(this).hasClass('active')) {
+        fastDepositItem.removeClass('active');
+        $(this).removeClass('active');
+    } else {
+        fastDepositItem.removeClass('active');
+        $(this).addClass('active');
+    }
+});

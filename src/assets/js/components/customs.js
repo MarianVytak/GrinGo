@@ -93,15 +93,16 @@ $(function () {
 
 
     // Sort Label
-    let sortLabel = $('.sort-label');
     let sortItem = $('.dropdown__content_list_item_link');
 
     sortItem.on('click', function (e) {
         e.preventDefault();
-        let sortItemText = $(this).text();
+        let sortItemText = $(this).html();
+        let thisSortLabel = $(this).attr('data-target');
+        console.log(thisSortLabel);
         sortItem.removeClass('active');
         $(this).addClass('active');
-        sortLabel.text(sortItemText);
+        $(thisSortLabel).html(sortItemText);
     });
 
 

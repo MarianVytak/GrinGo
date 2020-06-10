@@ -36,6 +36,9 @@
 }
 
 .dropdown__content_list_item_link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
   font-size: 1.5em;
   color: #909397;
   transition: .3s;
@@ -44,5 +47,21 @@
   }
   &.active {
     color: $white;
+  }
+  img {
+    width: 2em;
+    min-width: 2em;
+    margin-right: 1em;
+  }
+}
+
+.sort-label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  img {
+    width: 2em;
+    min-width: 2em;
+    margin-right: 1em;
   }
 }
