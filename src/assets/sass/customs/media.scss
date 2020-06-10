@@ -83,26 +83,43 @@
   // Side Menu
   .side-menu {
     display: none;
-    padding: 4em 0;
+    padding: 2em 0;
     overflow-y: auto;
     &.active {
       display: block;
       width: 100%;
       background-color: #1e212b;
+      .side-menu__top {
+        padding-bottom: 2em;
+      }
       .side-menu__list {
         display: block;
       }
       .side-menu__list_item {
-        margin-bottom: 3em;
+        margin-bottom: 2em;
         padding-left: 2em;
         box-sizing: border-box;
         &:last-child {
           margin-bottom: 0;
         }
       }
+      .side-menu__icon {
+        width: 3em;
+        min-width: 3em;
+      }
       .side-menu__label {
         white-space: nowrap;
         color: #888c8e;
+      }
+      .side-menu__bot {
+        .side-menu__list_item {
+          padding-left: 2.5em;
+        }
+        .side-menu__icon {
+          width: 2em;
+          min-width: 2em;
+          margin-right: 2.5em;
+        }
       }
       .fast-deposit {
         display: none;
