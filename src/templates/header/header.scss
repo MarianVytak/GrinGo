@@ -63,9 +63,12 @@
   border: 1px solid rgba($white, .15);
   cursor: pointer;
   transition: .3s;
-  &.active {
+  &:hover {
     border-color: $green;
     background-color: $green;
+    .header__search_text {
+      color: $white;
+    }
   }
   img {
     width: 2em;
@@ -76,6 +79,7 @@
   margin-left: 0.6em;
   font-size: 1.8em;
   color: rgba($white, .4);
+  transition: .3s;
 }
 
 .header__right {
