@@ -115,11 +115,15 @@
   justify-content: center;
   min-width: 12em;
   height: 5em;
+  margin-right: 0.5em;
   padding: 0 1em;
   box-sizing: border-box;
   border-radius: 1em;
   font-family: 'SF Pro Display Semibold', sans-serif;
   color: $white;
+  &:last-child {
+    margin-right: 0;
+  }
   img {
     max-width: 1.5em;
     max-height: 2em;
@@ -158,5 +162,24 @@
   width: 100%;
   &:first-child {
     margin-right: 1em;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .form-registration__social_link {
+    min-width: auto;
+  }
+}
+
+@media (max-width: 360px) {
+  .form-registration__social_link {
+    height: 4em;
+    padding: 0 0.5em;
+    img {
+      margin-right: 0.5em;
+    }
+    span {
+      font-size: 1.2em;
+    }
   }
 }

@@ -210,12 +210,14 @@ input {
   .modal-form {
     overflow: auto;
     .fancybox-button {
+      position: fixed;
       top: 1em;
       right: 1em;
       transform: none;
-      width: 2em;
-      height: 2em;
+      width: 4em;
+      height: 4em;
       padding: 0;
+      background-color: transparent;
     }
   }
   .form-title {

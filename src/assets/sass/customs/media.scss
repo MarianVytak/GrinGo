@@ -27,8 +27,8 @@
     width: 3em;
     margin-right: 1em;
   }
-  .page-home {
-    padding: 0;
+  .container {
+    padding-left: 0;
   }
   .scroll-top {
     display: none !important;
@@ -209,7 +209,7 @@
   // Section 1
   .section-1 {
     margin: 0;
-    padding: 8em 1em 1em;
+    padding: 1em;
   }
   .section-1__slider {
     .slick-slide {

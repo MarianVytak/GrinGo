@@ -81,6 +81,10 @@
 @media (max-width: 767.98px) {
   .modal-login {
     padding: 2em 1em 1em;
+    border-radius: 0;
+    border: none;
+    backdrop-filter: none;
+    background-color: transparent;
   }
   .modal-login__subtitle {
     font-size: 1.3em;
