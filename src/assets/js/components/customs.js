@@ -49,21 +49,23 @@ $(function () {
 
     // Scroll Top
     const scrollTop = $('.scroll-top');
-    scrollTop.on('click', function (e) {
-        e.preventDefault();
-        $('html, body').animate({
-            scrollTop: 0
-        }, 2000);
-    });
-    $(document).on('scroll', function () {
-        const scrollTopStart = $('.all-games').offset().top;
+    if (scrollTop.length > 0) {
+        scrollTop.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: 0
+            }, 2000);
+        });
+        $(document).on('scroll', function () {
+            const scrollTopStart = $('.all-games').offset().top;
 
-        if (scrollTop.offset().top >= scrollTopStart) {
-            scrollTop.addClass('active');
-        } else {
-            scrollTop.removeClass('active');
-        }
-    })
+            if (scrollTop.offset().top >= scrollTopStart) {
+                scrollTop.addClass('active');
+            } else {
+                scrollTop.removeClass('active');
+            }
+        })
+    }
 
 
 
@@ -124,14 +126,6 @@ $(function () {
         $(this).toggleClass('active');
         $(thisAccordionContent).slideToggle();
     });
-
-
-
-    const mobileNavigationNotification = $('.mobile-navigation-notification');
-    const notificationContent = $('.notification__content');
-    // mobileNavigationNotification.on('click', function (e) {
-    //     e.preventDefault();
-    // });
 
 
 
