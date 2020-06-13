@@ -68,16 +68,18 @@ $(function () {
 
 
     // Dropdown
-    let dropdownLink = $('.js-dropdown-link');
-    let dropdownContent = $('.js-dropdown-content');
+    const dropdownLink = $('.js-dropdown-link');
+    const dropdownContent = $('.js-dropdown-content');
 
     dropdownLink.on('click', function (e) {
         e.preventDefault();
         let thisDropdownContent = $(this).attr('href');
         if ($(thisDropdownContent).hasClass('active')) {
+            $(this).removeClass('active');
             dropdownContent.removeClass('active');
             $(thisDropdownContent).removeClass('active');
         } else {
+            $(this).addClass('active');
             dropdownContent.removeClass('active');
             $(thisDropdownContent).addClass('active');
         }
@@ -93,7 +95,7 @@ $(function () {
 
 
     // Sort Label
-    let sortItem = $('.dropdown__content_list_item_link');
+    const sortItem = $('.dropdown__content_list_item_link');
 
     sortItem.on('click', function (e) {
         e.preventDefault();
@@ -108,7 +110,7 @@ $(function () {
 
 
     // Accordion
-    let accordionLink = $('.accordion__link');
+    const accordionLink = $('.accordion__link');
 
     accordionLink.on('click', function (e) {
         e.preventDefault();
@@ -116,6 +118,14 @@ $(function () {
         $(this).toggleClass('active');
         $(thisAccordionContent).slideToggle();
     });
+
+
+
+    const mobileNavigationNotification = $('.mobile-navigation-notification');
+    const notificationContent = $('.notification__content');
+    // mobileNavigationNotification.on('click', function (e) {
+    //     e.preventDefault();
+    // });
 
 
 

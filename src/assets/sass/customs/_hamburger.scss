@@ -3,7 +3,6 @@
   width: 3.2em;
   height: 3.2em;
   cursor: pointer;
-  z-index: 99999;
   &.hamburger-active .hamburger-line:nth-child(1) {
     transform: translate(-50%,-50%);
     opacity: 0;

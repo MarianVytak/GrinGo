@@ -194,7 +194,7 @@
   .user__dropdown {
     position: inherit;
   }
-  .user__content, .notification__content {
+  .user__content {
     left: 0;
     right: auto;
     top: 7em;
@@ -204,6 +204,18 @@
     &:before {
       display: none;
     }
+  }
+  .notification__content {
+    position: fixed;
+    left: 0;
+    right: auto;
+    top: 7em;
+    bottom: auto;
+    transform: none;
+    width: 100%;
+    height: calc(100vh - 13em);
+    overflow-y: auto;
+    border-radius: 0;
   }
 
   // Section 1
