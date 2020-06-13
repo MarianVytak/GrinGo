@@ -195,15 +195,31 @@
     position: inherit;
   }
   .user__content {
+    position: fixed;
     left: 0;
     right: auto;
     top: 7em;
     bottom: auto;
     transform: none;
     width: 100%;
+    height: calc(100vh - 7em);
+    overflow-y: auto;
+    border-radius: 0;
     &:before {
       display: none;
     }
+  }
+  .user__content_title {
+    padding: 2em;
+  }
+  .user__content_mobile {
+    display: block;
+  }
+  .user__content_list {
+    border: none;
+  }
+  .user__content_close {
+    display: block;
   }
   .notification__content {
     position: fixed;
@@ -216,6 +232,9 @@
     height: calc(100vh - 13em);
     overflow-y: auto;
     border-radius: 0;
+    &:before {
+      display: none;
+    }
   }
 
   // Section 1
@@ -542,6 +561,20 @@
   }
   .header__hamburger {
     width: 4em;
+  }
+  .user__content_mobile {
+    padding: 2em 1em;
+  }
+  .user__content_mobile_info {
+    padding: 1.2em 1em;
+  }
+  .user__content_mobile_item {
+    &:first-child {
+      padding-right: 1em;
+    }
+    &:last-child {
+      padding-left: 1em;
+    }
   }
 }
 

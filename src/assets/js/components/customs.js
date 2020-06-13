@@ -92,6 +92,11 @@ $(function () {
         });
     });
 
+    $('.user__content_close').on('click', function (e) {
+        e.preventDefault();
+        $('#user-dropdown').removeClass('active');
+    });
+
 
 
     // Sort Label

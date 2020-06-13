@@ -382,10 +382,40 @@
 }
 
 .user__content_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 2.5em 2em;
   color: rgba($white, .7);
   span {
     font-size: 1.7em;
+  }
+}
+
+.user__content_close {
+  display: none;
+  position: relative;
+  width: 3em;
+  height: 3em;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+    width: 2em;
+    height: 2px;
+    background-color: $white;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+    width: 2em;
+    height: 2px;
+    background-color: $white;
   }
 }
 
@@ -483,5 +513,98 @@
   color: rgba($white, .3);
   &:hover {
     color: $white;
+  }
+}
+
+.user__content_mobile {
+  display: none;
+  padding: 2em 2em 1em;
+  border-top: 1px solid #363e47;
+}
+
+.user__content_mobile_info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.2em 2em;
+  border-radius: 0.5em;
+  background-color: rgba($black, .25);
+}
+
+.user__content_mobile_item {
+  width: 100%;
+  &:first-child {
+    padding-right: 2em;
+    border-right: 1px solid #363e47;
+    .user__content_mobile_info_value_icon {
+      margin-right: 0.5em;
+      margin-left: 0;
+    }
+  }
+  &:last-child {
+    padding-left: 2em;
+    .user__content_mobile_info_value_icon {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 1.5em;
+      height: 1.5em;
+      border-radius: 50%;
+      background-color: rgba($white, .1);
+      color: rgba($white, .3);
+      span {
+        font-size: 1.4em;
+      }
+    }
+  }
+}
+
+.user__content_mobile_info_label {
+  font-size: 1.4em;
+  color: rgba($white, .8);
+  text-align: right;
+}
+
+.user__content_mobile_info_value {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 0.5em;
+}
+
+.user__content_mobile_info_value_icon {
+  margin-left: 0.5em;
+  img {
+    width: 1.5em;
+  }
+}
+
+.user__content_mobile_info_value_text {
+  font-size: 1.6em;
+  color: #a8a8a8;
+  b {
+    font-family: 'SF Pro Display Bold', sans-serif;
+    color: $white;
+  }
+}
+
+.user__content_mobile_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.5em;
+  .btn {
+    width: 16em;
+    height: 4em;
+    margin-right: 2em;
+    &.btn-outline {
+      width: 12em;
+      margin-right: 0;
+      background-color: #373f47;
+      border: none;
+    }
+    span {
+      font-size: 1.4em;
+    }
   }
 }
