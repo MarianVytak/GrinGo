@@ -5,13 +5,13 @@
         </div>
         <div class="mobile-navigation__item_label">Главная</div>
     </a>
-    <a href="#" class="mobile-navigation__item" data-fancybox data-src="#modal-search">
+    <a href="#" class="mobile-navigation__item" data-fancybox data-touch="false" data-src="#modal-search">
         <div class="mobile-navigation__item_icon">
             <img src="../../assets/img/svg/navigation-icon-2.svg" alt="">
         </div>
         <div class="mobile-navigation__item_label">Поиск</div>
     </a>
-    <a href="#" class="mobile-navigation__item" data-fancybox data-src="#modal-deposit">
+    <a href="#" class="mobile-navigation__item" data-fancybox data-touch="false" data-src="#modal-deposit">
         <div class="mobile-navigation__item_icon"></div>
         <div class="mobile-navigation__item_deposit">
             <img src="../../assets/img/svg/more-white.svg" alt="">
@@ -26,7 +26,10 @@
             <div class="mobile-navigation__item_label">Уведомл.</div>
         </a>
         <div class="notification__content dropdown__content js-dropdown-content" id="notification-dropdown">
-            <div class="notification__content_title"><span>Уведомления</span></div>
+            <div class="notification__content_title">
+                <span>Уведомления</span>
+                <a href="#notification-dropdown" class="dropdown__content_close"></a>
+            </div>
             <ul class="notification__content_list">
                 <li class="notification__content_list_item v-1">
                     <div class="notification__content_list_item_date">03.06.2020 23:30</div>
@@ -60,11 +63,13 @@
             </ul>
         </div>
     </div>
-    <a href="#" class="mobile-navigation__item">
-        <div class="mobile-navigation__item_icon">
-            <img src="../../assets/img/svg/navigation-icon-4.svg" alt="">
-        </div>
-        <div class="mobile-navigation__item_label">Профиль</div>
-    </a>
+    <div class="dropdown">
+        <a href="#user-dropdown" class="mobile-navigation__item js-dropdown-link">
+            <div class="mobile-navigation__item_icon">
+                <img src="../../assets/img/svg/navigation-icon-4.svg" alt="">
+            </div>
+            <div class="mobile-navigation__item_label">Профиль</div>
+        </a>
+    </div>
 </div>
 <!-- /.mobile-navigation -->

@@ -287,6 +287,9 @@
 }
 
 .notification__content_title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   padding: 0 2em 1.5em;
   font-family: 'SF Pro Display Meduim', sans-serif;
   color: $white;
@@ -389,33 +392,6 @@
   color: rgba($white, .7);
   span {
     font-size: 1.7em;
-  }
-}
-
-.user__content_close {
-  display: none;
-  position: relative;
-  width: 3em;
-  height: 3em;
-  &:before {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%) rotate(45deg);
-    width: 2em;
-    height: 2px;
-    background-color: $white;
-  }
-  &:after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%) rotate(-45deg);
-    width: 2em;
-    height: 2px;
-    background-color: $white;
   }
 }
 

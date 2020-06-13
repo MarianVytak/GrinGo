@@ -8,7 +8,7 @@
                 <div class="hamburger-line"></div>
             </div>
         </div>
-        <div class="header__logo" data-fancybox data-src="#modal-verification">
+        <div class="header__logo" data-fancybox data-touch="false" data-src="#modal-verification">
             <div class="header__logo_img">
                 <img src="../../assets/img/icons/logo.png" alt="">
             </div>
@@ -16,7 +16,7 @@
                 <b>GrinGo</b>Play.com
             </div>
         </div>
-        <div class="header__search" data-fancybox data-src="#modal-search">
+        <div class="header__search" data-fancybox data-touch="false" data-src="#modal-search">
             <img src="../../assets/img/svg/search.svg" alt="">
             <div class="header__search_text">Поиск</div>
         </div>
@@ -50,13 +50,13 @@
             </ul>
         </nav>
         <!-- /.navigation -->
-        <a href="#" class="header__login btn btn-mini btn-outline register" data-fancybox
+        <a href="#" class="header__login btn btn-mini btn-outline register" data-fancybox data-touch="false"
            data-src="#modal-login"><span>Войти</span></a>
-        <a href="#" class="btn header__register register" data-fancybox data-src="#modal-registration">
+        <a href="#" class="btn header__register register" data-fancybox data-touch="false" data-src="#modal-registration">
             <img src="../../assets/img/svg/register-icon.svg" alt="">
             <span>Регистрация</span>
         </a>
-        <a href="#" class="btn header__login login" data-fancybox data-src="#modal-deposit">
+        <a href="#" class="btn header__login login" data-fancybox data-touch="false" data-src="#modal-deposit">
             <img src="../../assets/img/svg/more.svg" alt="">
             <span>Пополнить</span>
         </a>
@@ -76,7 +76,7 @@
             <div class="user__content dropdown__content js-dropdown-content" id="user-dropdown">
                 <div class="user__content_title">
                     <span>Привет, Denis!</span>
-                    <div class="user__content_close"></div>
+                    <a href="#user-dropdown" class="dropdown__content_close"></a>
                 </div>
                 <div class="user__content_mobile">
                     <div class="user__content_mobile_info">
@@ -156,7 +156,9 @@
                 <div class="notification__badge"><span>8</span></div>
             </a>
             <div class="notification__content dropdown__content js-dropdown-content" id="notification-content">
-                <div class="notification__content_title"><span>Уведомления</span></div>
+                <div class="notification__content_title">
+                    <span>Уведомления</span>
+                </div>
                 <ul class="notification__content_list">
                     <li class="notification__content_list_item v-1">
                         <div class="notification__content_list_item_date">03.06.2020 23:30</div>

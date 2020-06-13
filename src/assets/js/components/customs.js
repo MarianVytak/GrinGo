@@ -92,9 +92,10 @@ $(function () {
         });
     });
 
-    $('.user__content_close').on('click', function (e) {
+    $('.dropdown__content_close').on('click', function (e) {
         e.preventDefault();
-        $('#user-dropdown').removeClass('active');
+        let thisDropdownContent = $(this).attr('href');
+        $(thisDropdownContent).removeClass('active');
     });
 
 

@@ -9,7 +9,6 @@
   height: 6em;
   box-sizing: border-box;
   background-color: #252934;
-  z-index: 7777;
   .dropdown {
     width: 100%;
   }
@@ -25,24 +24,6 @@
   height: 100%;
   padding: 1em 0;
   box-sizing: border-box;
-  &.active {
-    .mobile-navigation__item_label {
-      color: $white;
-    }
-    .mobile-navigation__item_icon {
-      filter: opacity(1);
-    }
-    &:before {
-      content: '';
-      position: absolute;
-      top: -2px;
-      left: 0;
-      width: 100%;
-      height: 3px;
-      border-radius: 3px;
-      background-color: $green;
-    }
-  }
 }
 
 .mobile-navigation__item_icon {
@@ -77,5 +58,4 @@
   box-sizing: border-box;
   border-radius: 50%;
   background-color: $green;
-  z-index: 8888;
 }
