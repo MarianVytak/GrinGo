@@ -17,14 +17,6 @@
       width: calc(100%/6 - 2em);
     }
   }
-  .card__link {
-    display: flex;
-    &.offline {
-      img {
-        filter: grayscale(1);
-      }
-    }
-  }
   .card__demo {
     bottom: 0;
     display: flex;
