@@ -8,7 +8,7 @@
   box-sizing: border-box;
   backdrop-filter: blur(2.2em);
   background-color: rgba(#15181d, .8);
-  z-index: 8000;
+  z-index: 9999;
   &.active {
     width: 25em;
     .side-menu__list_item {

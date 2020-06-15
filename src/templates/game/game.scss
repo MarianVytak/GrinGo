@@ -13,10 +13,10 @@
   &.active {
     position: fixed;
     top: 0;
-    left: 0;
-    z-index: 9999;
+    left: 7em;
+    z-index: 8888;
     margin: 0;
-    width: 100%;
+    width: calc(100% - 7em);
     height: 100vh;
   }
 }
