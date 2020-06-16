@@ -1,0 +1,44 @@
+.slots {
+  .all-games {
+    padding: 3em;
+  }
+}
+
+@media (min-width: 1400px) {
+  .slots {
+    .all-games {
+      .all-games__list {
+        .card {
+          width: calc(100%/5 - 2em);
+        }
+      }
+    }
+  }
+}
+
+@media (min-width: 2000px) {
+  .slots {
+    .all-games {
+      .all-games__list {
+        .card {
+          width: calc(100%/5 - 2em);
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .slots {
+    .all-games {
+      padding: 1em;
+      .all-games__list {
+        flex-wrap: wrap;
+        overflow-x: hidden;
+        .card {
+          width: calc(100%/2 - 1em);
+        }
+      }
+    }
+  }
+}
