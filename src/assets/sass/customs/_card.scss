@@ -16,7 +16,6 @@
 }
 
 .card__link {
-  display: flex;
   &.offline {
     img {
       filter: grayscale(1);
