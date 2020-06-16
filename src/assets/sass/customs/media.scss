@@ -327,6 +327,9 @@
     &.active {
       height: 4em;
       padding: 0;
+      .section-3__list {
+        height: 100%;
+      }
     }
   }
   .section-3__list {

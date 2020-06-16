@@ -77,10 +77,12 @@ $(function () {
         e.preventDefault();
         let thisDropdownContent = $(this).attr('href');
         if ($(thisDropdownContent).hasClass('active')) {
+            $('body').removeClass('dropdown-active');
             $(this).removeClass('active');
             dropdownContent.removeClass('active');
             $(thisDropdownContent).removeClass('active');
         } else {
+            $('body').addClass('dropdown-active');
             $(this).addClass('active');
             dropdownContent.removeClass('active');
             $(thisDropdownContent).addClass('active');
@@ -98,6 +100,7 @@ $(function () {
         e.preventDefault();
         let thisDropdownContent = $(this).attr('href');
         $(thisDropdownContent).removeClass('active');
+        $('body').removeClass('dropdown-active');
     });
 
 
