@@ -169,9 +169,8 @@
 
 .game__area {
   position: relative;
-  padding-bottom: 53%;
+  height: calc(100vh - 24em);
   &.active {
-    padding-bottom: 0;
     height: calc(100vh - 7em);
   }
   iframe {
