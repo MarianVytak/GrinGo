@@ -1,0 +1,43 @@
+.tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 5em;
+  margin-top: 2em;
+  border-radius: 3em;
+  background-color: rgba($white, .05);
+}
+
+.tabs-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 5em;
+  border-radius: 3em;
+  background-color: transparent;
+  font-family: 'SF Pro Display Semibold', sans-serif;
+  color: $white;
+  span {
+    font-size: 1.5em;
+  }
+  &:hover {
+    background-color: rgba($white, .05);
+  }
+  &.active {
+    background-color: $green;
+    &:hover {
+      background-color: $green;
+    }
+  }
+}
+
+.tab-content {}
+
+.tabs-content {
+  display: none;
+  &.active {
+    display: block;
+  }
+}

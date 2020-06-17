@@ -18,6 +18,9 @@
     margin: 0;
     width: calc(100% - 7em);
     height: 100vh;
+    .game__sidebar_list {
+      height: 68.1em;
+    }
   }
 }
 
@@ -221,22 +224,51 @@
   width: 33em;
   min-width: 33em;
   margin-top: 1.5em;
-  padding: 1.5em 2em 2em;
+  padding: 1.5em 2em 0.5em;
   background-color: #1c2129;
   &.active {
     display: none;
   }
+  .tab {
+    height: 4em;
+    margin-top: 0;
+    border: 1px solid #404049;
+  }
+  .tabs-link {
+    height: 4em;
+    color: #b1b1bb;
+    &.active {
+      color: $white;
+    }
+    span {
+      font-size: 1.4em;
+    }
+  }
 }
 
 .game__sidebar_title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 3em;
+  margin: 1.5em 0;
+  border-radius: 1.5em;
+  background-color: #252934;
   font-family: 'SF Pro Display Meduim', sans-serif;
-  font-size: 2em;
   color: rgba($white, .6);
   text-align: center;
+  span {
+    font-size: 2em;
+  }
+  img {
+    margin-top: 0.5em;
+  }
 }
 
 .game__sidebar_list {
-  padding-top: 1.5em;
+  height: 63.8em;
+  overflow-y: auto;
 }
 
 .game__sidebar_list_item {
@@ -244,6 +276,10 @@
   align-items: center;
   justify-content: flex-start;
   padding: 1.5em 0;
+  border-bottom: 1px solid #404049;
+  &:last-child {
+    border-bottom: none;
+  }
 }
 
 .game__sidebar_list_img {

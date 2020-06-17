@@ -132,4 +132,11 @@ $(function () {
 
 
 
+    // Custom Scroll
+    $('.custom-scroll').mCustomScrollbar({
+        theme:"minimal"
+    });
+
+
+
 });
