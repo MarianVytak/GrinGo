@@ -9,4 +9,9 @@ gameSettingsLink.on('click', function (e) {
     } else {
         $('.game__area').removeClass('active');
     }
+    if ($('.game').hasClass('active')) {
+        $('body').addClass('fancybox-active');
+    } else {
+        $('body').removeClass('fancybox-active');
+    }
 });
