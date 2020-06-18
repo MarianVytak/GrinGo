@@ -46,7 +46,7 @@
   &:last-child {
     margin-right: 0;
   }
-  &:nth-child(1) {
+  &._1 {
     .section-3__list_item_link {
       &:hover, &.active {
         background-color: #285119;
@@ -54,7 +54,7 @@
       }
     }
   }
-  &:nth-child(2) {
+  &._2 {
     .section-3__list_item_link {
       &:hover, &.active {
         background-color: #51350e;
@@ -62,7 +62,7 @@
       }
     }
   }
-  &:nth-child(3) {
+  &._3 {
     .section-3__list_item_link {
       &:hover, &.active {
         background-color: rgba(#f54d08, .15);
@@ -70,7 +70,7 @@
       }
     }
   }
-  &:nth-child(4) {
+  &._4 {
     .section-3__list_item_link {
       &:hover, &.active {
         background-color: #143558;
@@ -78,7 +78,7 @@
       }
     }
   }
-  &:nth-child(5) {
+  &._5 {
     .section-3__list_item_link {
       &:hover, &.active {
         background-color: #004728;
@@ -86,7 +86,7 @@
       }
     }
   }
-  &:nth-child(6) {
+  &._6 {
     .section-3__list_item_link {
       &:hover, &.active {
         background-color: #414d02;
@@ -94,23 +94,19 @@
       }
     }
   }
-  &:nth-child(7) {
+  &._7 {
     .section-3__list_item_link {
       &:hover, &.active {
         background-color: #15304b;
         color: #2f77c2;
       }
     }
-    .section-3__list_item_title {
-      &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: -0.4em;
-        width: 0.5em;
-        height: 0.5em;
-        border-radius: 50%;
-        background-color: $green;
+  }
+  &._8 {
+    .section-3__list_item_link {
+      &:hover, &.active {
+        background-color: #3b1568;
+        color: #9741ff;
       }
     }
   }
@@ -136,6 +132,9 @@
   height: 3em;
   border-radius: 50%;
   margin-right: 0.7em;
+  img {
+    border-radius: 50%;
+  }
 }
 
 .section-3__list_item_title {
@@ -150,5 +149,17 @@
   }
   .arrow {
     font-size: 1em;
+  }
+  &.active {
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: -0.4em;
+      width: 0.5em;
+      height: 0.5em;
+      border-radius: 50%;
+      background-color: $green;
+    }
   }
 }
