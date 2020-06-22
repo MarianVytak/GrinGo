@@ -2,6 +2,8 @@
   .container {
     max-width: 114.3em;
     margin: 0 auto;
+    padding-left: 0;
+    padding-bottom: 7em;
     box-sizing: border-box;
   }
   .side-menu {
@@ -73,4 +75,25 @@
   margin-right: 0.5em;
   fill: rgba($white, .4);
   transition: .3s;
+}
+
+.settings__title {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  font-family: 'SF Pro Display Meduim', sans-serif;
+  color: $white;
+  img {
+    width: 3em;
+    margin-right: 1em;
+  }
+  span {
+    font-size: 3.5em;
+  }
+}
+
+.settings__subtitle {
+  margin-top: 0.2em;
+  font-size: 2.2em;
+  color: rgba($white, .3);
 }

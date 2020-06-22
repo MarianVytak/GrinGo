@@ -200,6 +200,10 @@
   font-size: 1.6em;
   color: $white;
   text-align: right;
+  span {
+    font-family: 'SF Pro Display', sans-serif;
+    color: rgba($white, .5);
+  }
 }
 
 .user__icon {
