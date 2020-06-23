@@ -25,6 +25,27 @@ $(function () {
         ]
     });
 
+    $('.balance-3__slider').slick({
+        slidesToShow: 5,
+        slidesToScroll: 1,
+        infinite: false,
+        fade: false,
+        arrows: false,
+        dots: false,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                    slidesToShow: 1,
+                    slidesToScroll: 1,
+                    arrows: false,
+                    centerMode: true,
+                    centerPadding: '15vw',
+                }
+            }
+        ]
+    });
+
 
 
     // View All Cards

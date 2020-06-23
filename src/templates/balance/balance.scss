@@ -194,3 +194,58 @@
     font-size: 1.8em;
   }
 }
+
+.balance-3__slider {
+  margin: 4em -16.5em 0;
+  .slick-slide {
+    margin: 1em;
+  }
+  .card__overflow {
+    opacity: .7;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), #000000);
+  }
+}
+
+.balance-3__card {
+  position: relative;
+  height: 16.4em;
+  box-sizing: border-box;
+  border-radius: 0.5em;
+  border: 2px dashed #38414b;
+}
+
+.balance-3__card_title {
+  position: absolute;
+  top: 2em;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  font-family: 'SF Pro Display Meduim', sans-serif;
+  color: $white;
+  text-align: center;
+  span {
+    font-size: 2.3em;
+  }
+}
+
+.balance-3__card_btn {
+  position: absolute;
+  bottom: 2em;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 17.5em;
+  height: 4.5em;
+  border-radius: 4.5em;
+  background-color: rgba($white, .03);
+  font-family: 'SF Pro Display Bold', sans-serif;
+  color: $white;
+  span {
+    font-size: 1.4em;
+  }
+  &:hover {
+    background-color: rgba($white, .06);
+  }
+}

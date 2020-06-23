@@ -12,6 +12,15 @@
     .card__demo {
       opacity: 1;
     }
+    .card__name {
+      top: 3em;
+    }
+    .card__date {
+      opacity: 0;
+    }
+    .card__value {
+      opacity: 0;
+    }
   }
 }
 
@@ -97,5 +106,49 @@
   opacity: 0;
   &:hover {
     color: $white;
+  }
+}
+
+.card__name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: 'SF Pro Display Meduim', sans-serif;
+  color: $white;
+  span {
+    font-size: 1.7em;
+  }
+}
+
+.card__date {
+  position: absolute;
+  left: 50%;
+  bottom: 5em;
+  transform: translateX(-50%);
+  color: rgba($white, .6);
+  span {
+    font-size: 1.7em;
+  }
+}
+
+.card__value {
+  position: absolute;
+  left: 50%;
+  bottom: 1.5em;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 8em;
+  height: 3em;
+  padding: 0 0.8em;
+  box-sizing: border-box;
+  border-radius: 3em;
+  background-color: $green;
+  font-family: 'SF Pro Display Semibold', sans-serif;
+  color: $white;
+  span {
+    font-size: 1.5em;
   }
 }
