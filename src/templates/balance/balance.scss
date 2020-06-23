@@ -12,6 +12,14 @@
   }
 }
 
+.balance-3 {
+  margin-top: 6em;
+}
+
+.balance-4 {
+  margin-top: 6em;
+}
+
 .balance {
   display: flex;
   align-items: flex-start;
@@ -247,5 +255,44 @@
   }
   &:hover {
     background-color: rgba($white, .06);
+  }
+}
+
+.balance__date {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 4em;
+}
+
+.balance__date_item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-right: 3.5em;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.balance__date_label {
+  margin-right: 1em;
+  font-family: 'SF Pro Display Meduim', sans-serif;
+  color: rgba($white, .4);
+  span {
+    font-size: 2em;
+  }
+}
+
+.balance__date_input {
+  width: 16em;
+  height: 3em;
+  input {
+    padding: 0 0.2em;
+    border-radius: 0.3em;
+    border: none;
+    background-color: rgba($white, .07);
+    font-size: 1.7em;
+    color: rgba($white, .6);
   }
 }
