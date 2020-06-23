@@ -100,3 +100,46 @@
   font-size: 2.2em;
   color: rgba($white, .3);
 }
+
+@media (max-width: 767.98px) {
+  .settings {
+    .container {
+      max-width: none;
+      width: 100%;
+      padding: 2em 1em 0;
+    }
+  }
+  .settings__title {
+    img {
+      width: 2em;
+      margin-right: 0.5em;
+    }
+    span {
+      font-size: 2.5em;
+    }
+  }
+  .settings__subtitle {
+    font-size: 1.6em;
+  }
+  .settings-nav {
+    overflow-x: auto;
+  }
+  .settings-nav__list {
+    width: auto;
+    padding: 0 1em;
+  }
+  .settings-nav__list_item {
+    &:last-child {
+      padding-right: 1em;
+    }
+  }
+  .settings-nav__list_link {
+    height: 4em;
+    span {
+      font-size: 1.5em;
+    }
+  }
+  .settings-nav__list_icon {
+    width: 1.8em;
+  }
+}

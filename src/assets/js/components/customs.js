@@ -41,6 +41,7 @@ $(function () {
                     arrows: false,
                     centerMode: true,
                     centerPadding: '15vw',
+                    infinite: true
                 }
             }
         ]
