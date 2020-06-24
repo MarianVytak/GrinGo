@@ -25,7 +25,32 @@
   background-color: #22252e;
 }
 
+.modal-grid__left_content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2.5em 1.5em;
+  box-sizing: border-box;
+}
+
 .modal-grid__left_title {
+  width: 100%;
+  font-family: 'SF Pro Display Meduim', sans-serif;
+  font-size: 2.2em;
+  color: $white;
+  text-align: center;
+}
+
+.modal-grid__left_subtitle {
+  width: 100%;
+  margin-top: 0.5em;
+  font-size: 1.8em;
+  color: rgba($white, .6);
+  text-align: center;
+}
+
+.modal-grid__left_bot {
   position: absolute;
   bottom: 0;
   left: 0;
