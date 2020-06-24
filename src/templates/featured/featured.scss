@@ -1,0 +1,24 @@
+.featured__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -1.5em;
+  margin-top: 4em;
+  .card {
+    width: calc(100% / 4 - 3em);
+    margin: 1.5em;
+    &:hover {
+      transform: none;
+    }
+  }
+}
+
+@media (max-width: 767.98px) {
+  .featured__list {
+    margin: -0.5em;
+    margin-top: 2em;
+    .card {
+      width: calc(100% / 2 - 1em);
+      margin: 0.5em;
+    }
+  }
+}
