@@ -21,7 +21,8 @@
                 <div class="dropdown__content js-dropdown-content" id="deposit-currency-3">
                     <ul class="dropdown__content_list">
                         <li class="dropdown__content_list_item">
-                            <a href="#" class="dropdown__content_list_item_link active" data-target="#deposit-currency-value">
+                            <a href="#" class="dropdown__content_list_item_link active"
+                               data-target="#deposit-currency-value">
                                 <img src="../../../assets/img/svg/qiwi.svg" alt="">
                                 QIWI
                             </a>
@@ -56,17 +57,83 @@
         </div>
         <div class="form-group">
             <div class="input-label">3. Введите сумму полнения</div>
-            <div class="modal-deposit_grid">
-                <label class="input">
-                    <input type="number" placeholder="Ваша сумма платежа">
+            <div class="modal-deposit__range">
+                <input type="radio" id="v-100" name="modal-deposit-range">
+                <input type="radio" id="v-300" name="modal-deposit-range">
+                <input type="radio" id="v-500" name="modal-deposit-range" checked>
+                <input type="radio" id="v-1000" name="modal-deposit-range">
+                <input type="radio" id="v-2500" name="modal-deposit-range">
+                <input type="radio" id="v-5000" name="modal-deposit-range">
+                <input type="radio" id="v-10000" name="modal-deposit-range">
+                <div class="modal-deposit__range_bg"></div>
+                <label class="modal-deposit__range_item" for="v-100">
+                    <span class="modal-deposit__range_value"><span>100₽</span></span>
                 </label>
-                <div class="modal-deposit_grid_list">
-                    <div class="modal-deposit_grid_item"><span>100₽</span></div>
-                    <div class="modal-deposit_grid_item"><span>300₽</span></div>
-                    <div class="modal-deposit_grid_item"><span>500₽</span></div>
-                    <div class="modal-deposit_grid_item"><span>1000₽</span></div>
-                </div>
+                <label class="modal-deposit__range_item" for="v-300">
+                    <span class="modal-deposit__range_value"><span>300₽</span></span>
+                </label>
+                <label class="modal-deposit__range_item" for="v-500">
+                    <span class="modal-deposit__range_value"><span>500₽</span></span>
+                </label>
+                <label class="modal-deposit__range_item v-1000" for="v-1000">
+                    <img class="modal-deposit__range_item_img" src="../../../assets/img/svg/silvercoin.svg" alt="">
+                    <span class="modal-deposit__range_value"><span>1000₽</span></span>
+                    <span class="modal-deposit__range_tooltip">
+                        <span class="modal-deposit__range_tooltip_icon">
+                            <img src="../../../assets/img/svg/silvercoin.svg" alt="">
+                        </span>
+                        <span class="modal-deposit__range_tooltip_content">
+                            +10 фриспинов за пополнение!
+                        </span>
+                    </span>
+                </label>
+                <label class="modal-deposit__range_item v-2500" for="v-2500">
+                    <img class="modal-deposit__range_item_img" src="../../../assets/img/svg/goldencoin.svg" alt="">
+                    <span class="modal-deposit__range_value"><span>2500₽</span></span>
+                    <span class="modal-deposit__range_tooltip">
+                        <span class="modal-deposit__range_tooltip_icon">
+                            <img src="../../../assets/img/svg/goldencoin.svg" alt="">
+                        </span>
+                        <span class="modal-deposit__range_tooltip_content">
+                            +25 фриспинов за пополнение!
+                        </span>
+                    </span>
+                </label>
+                <label class="modal-deposit__range_item v-5000" for="v-5000">
+                    <img class="modal-deposit__range_item_img" src="../../../assets/img/svg/bluegem.svg" alt="">
+                    <span class="modal-deposit__range_value"><span>5000₽</span></span>
+                    <span class="modal-deposit__range_tooltip">
+                        <span class="modal-deposit__range_tooltip_icon">
+                            <img src="../../../assets/img/svg/bluegem.svg" alt="">
+                        </span>
+                        <span class="modal-deposit__range_tooltip_content">
+                            +50 фриспинов за пополнение!
+                        </span>
+                    </span>
+                </label>
+                <label class="modal-deposit__range_item v-10000" for="v-10000">
+                    <img class="modal-deposit__range_item_img" src="../../../assets/img/svg/purplegem.svg" alt="">
+                    <span class="modal-deposit__range_value"><span>10000₽</span></span>
+                    <span class="modal-deposit__range_tooltip">
+                        <span class="modal-deposit__range_tooltip_icon">
+                            <img src="../../../assets/img/svg/purplegem.svg" alt="">
+                        </span>
+                        <span class="modal-deposit__range_tooltip_content">
+                            +100 фриспинов за пополнение!
+                        </span>
+                    </span>
+                </label>
             </div>
+            <!-- /.modal-deposit__range -->
+            <label class="input">
+                <input type="number" placeholder="Ваша сумма платежа">
+            </label>
+        </div>
+        <div class="form-group">
+            <div class="input-label">Промокод</div>
+            <label class="input">
+                <input type="number" placeholder="Введите бонусный промокод">
+            </label>
         </div>
         <div class="form-btn">
             <button class="btn">
