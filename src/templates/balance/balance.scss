@@ -103,7 +103,6 @@
   height: 8.8em;
   margin-right: 3em;
   border-radius: 50%;
-  background-color: #265a1c;
   overflow: hidden;
   img {
     width: 100%;
@@ -168,7 +167,10 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 4em;
+  margin: 3em -1em -1em;
+  padding: 1em;
+  border-radius: 2.6em;
+  background-color: rgba($black, .1);
 }
 
 .balance__item_bot_btn_left {
@@ -188,6 +190,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   width: 21.8em;
   height: 6em;
   box-sizing: border-box;
@@ -198,8 +201,15 @@
     background-color: $green;
     color: $white;
   }
+  img {
+    width: 2.8em;
+  }
   span {
+    display: block;
+    width: 100%;
+    margin-top: -1em;
     font-size: 1.8em;
+    text-align: center;
   }
 }
 
@@ -285,7 +295,7 @@
 }
 
 .balance__date_input {
-  width: 16em;
+  width: 18em;
   height: 3em;
   input {
     padding: 0 0.2em;
@@ -302,7 +312,6 @@
   padding: 1.5em;
   box-sizing: border-box;
   border-radius: .3em;
-  //background-color: rgba($black, .2);
   background-color: #15171e;
 }
 
@@ -470,6 +479,7 @@
   }
   .balance__item_bot {
     margin-top: 2em;
+    background-color: transparent;
   }
   .balance__item_user {
     width: 17em;
@@ -497,6 +507,9 @@
   .balance__item_bot_btn_right {
     width: 15em;
     height: 3.5em;
+    img {
+      width: 2em;
+    }
     span {
       font-size: 1.2em;
     }
