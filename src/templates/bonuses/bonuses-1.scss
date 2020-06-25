@@ -1,0 +1,157 @@
+.bonuses-1 {
+  margin: 6em 0;
+  padding: 4em 5em 7em;
+  box-sizing: border-box;
+  border-radius: 1em;
+  box-shadow: 0 0 3em 0 rgba(0, 0, 0, 0.16);
+  background-color: #2d313e;
+}
+
+.bonuses-1__title {
+  font-family: 'SF Pro Display Semibold', sans-serif;
+  font-size: 3.6em;
+  color: $white;
+}
+
+.bonuses-1__list {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.bonuses-1__list_card {
+  width: 100%;
+  margin-right: 5em;
+  &:last-child {
+    margin-right: 0;
+  }
+  &.card-2 {
+    .bonuses-1__list_card_title {
+      color: #55c12f;
+    }
+  }
+  &.card-3 {
+    .bonuses-1__list_card_title {
+      color: #bddf06;
+    }
+  }
+  &.card-4 {
+    .bonuses-1__list_card_title {
+      color: #fea429;
+    }
+  }
+}
+
+.bonuses-1__list_card_img {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  margin-bottom: 1em;
+  img {
+    width: 100%;
+  }
+}
+
+.bonuses-1__list_card_title {
+  font-family: 'SF Pro Display Semibold', sans-serif;
+  font-size: 3em;
+  color: $white;
+  text-align: center;
+}
+
+.bonuses-1__list_card_content {
+  margin-top: 1em;
+  padding: 1em 1.5em;
+  border-radius: 1em;
+  background-color: #383c48;
+  text-align: center;
+}
+
+.bonuses-1__list_card_desc {
+  margin-bottom: 0.5em;
+  font-family: 'SF Pro Display Meduim', sans-serif;
+  font-size: 1.6em;
+  color: rgba($white, .6);
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.bonuses-1__progress {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 3em;
+}
+
+.bonuses-1__progress_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-right: 5em;
+  &.active {
+    .btn {
+      &:before {
+        border-color: $green;
+      }
+    }
+    .bonuses-1__progress_count {
+      border-color: $green;
+      color: $green;
+      &:before {
+        border-color: $green;
+      }
+    }
+  }
+  &:last-child {
+    margin-right: 0;
+    .bonuses-1__progress_count {
+      &:before {
+        display: none;
+      }
+    }
+  }
+  .btn {
+    position: relative;
+    width: 18em;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: -2em;
+      transform: translate(100%,-50%);
+      width: 24em;
+      height: 2px;
+      box-sizing: border-box;
+      border-top: 2px dashed #6f7578;
+    }
+  }
+}
+
+.bonuses-1__progress_count {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  border: 1px solid #6f7578;
+  font-family: 'SF Pro Display Meduim', sans-serif;
+  color: #a8a8a8;
+  span {
+    font-size: 2.4em;
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 7em;
+    transform: translateY(-50%);
+    width: 30em;
+    height: 2px;
+    box-sizing: border-box;
+    border-top: 2px dashed #6f7578;
+  }
+}

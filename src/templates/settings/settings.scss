@@ -6,6 +6,9 @@
     padding-bottom: 7em;
     box-sizing: border-box;
     overflow: visible;
+    &.bonuses {
+      max-width: 163.4em;
+    }
   }
   .side-menu {
     display: none;
