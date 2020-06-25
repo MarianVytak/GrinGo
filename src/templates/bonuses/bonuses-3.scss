@@ -44,4 +44,27 @@
 
 
 
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+  .bonuses-3 {
+    margin-top: 3em;
+  }
+  .bonuses-3__title {
+    font-size: 2em;
+  }
+  .bonuses-3__subtitle {
+    span {
+      font-size: 1.4em;
+    }
+  }
+  .bonuses-3__list {
+    margin-top: 2em;
+  }
+  .bonuses-3__list_item {
+    margin-right: 2em;
+  }
+  .bonuses-3__list_item_link {
+    img {
+      width: 4em;
+    }
+  }
+}
