@@ -53,12 +53,14 @@
 }
 
 .bonuses-2__card_title {
+  max-width: 9em;
   font-family: 'SF Pro Display Bold', sans-serif;
   font-size: 4.5em;
   color: $white;
 }
 
 .bonuses-2__card_desc {
+  max-width: 40em;
   margin-top: 1em;
   font-family: 'SF Pro Display Semibold', sans-serif;
   color: rgba($white, .6);
@@ -143,6 +145,7 @@
 }
 
 .bonuses-2__card_bot_content {
+  max-width: 22em;
   font-family: 'SF Pro Display Semibold', sans-serif;
   font-size: 1.8em;
   color: rgba($white, .8);
@@ -170,4 +173,77 @@
 
 
 
-@media (max-width: 767.98px) {}
+@media (max-width: 767.98px) {
+  .bonuses-2 {
+    margin: 2em 0 0;
+  }
+  .bonuses-2__card {
+    width: 100%;
+    height: auto;
+    margin: 0 0 2em;
+    padding: 2em 1em;
+    &:last-child {
+      margin: 0;
+    }
+    &.card-4 {
+      padding: 10em 1em 2em;
+    }
+  }
+  .bonuses-2__card_img {
+    display: none;
+  }
+  .bonuses-2__card_program {
+    margin-top: 0;
+    font-size: 1em;
+  }
+  .bonuses-2__card_bonus {
+    height: 3em;
+    padding: 0 1em;
+    span {
+      font-size: 1em;
+    }
+  }
+  .bonuses-2__card_title {
+    max-width: none;
+    font-size: 2.5em;
+  }
+  .bonuses-2__card_desc {
+    max-width: none;
+    span {
+      font-size: 1.3em;
+    }
+  }
+  .bonuses-2__card_bot {
+    position: initial;
+    display: block;
+    height: auto;
+    left: auto;
+    width: auto;
+    margin: 2em -1em -2em;
+    padding: 1em;
+  }
+  .bonuses-2__card_bot_content {
+    max-width: none;
+    font-size: 1.2em;
+  }
+  .bonuses-2__card_bot_btn {
+    width: 16em;
+    height: 3.5em;
+    margin-top: 1em;
+    border-radius: 1em;
+    span {
+      font-size: 1.2em;
+    }
+  }
+  .bonuses-2__card_btn {
+    width: 20em;
+    height: 4em;
+    img {
+      width: 2em;
+      margin-right: 1em;
+    }
+    span {
+      font-size: 1.4em;
+    }
+  }
+}
