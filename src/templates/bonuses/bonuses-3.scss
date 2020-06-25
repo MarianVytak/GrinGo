@@ -1,0 +1,43 @@
+.bonuses-3 {
+  margin-top: 11.5em;
+}
+
+.bonuses-3__title {
+  font-family: 'SF Pro Display Light', sans-serif;
+  font-size: 3.5em;
+  color: $white;
+  text-align: center;
+}
+
+.bonuses-3__subtitle {
+  max-width: 55em;
+  margin: 1em auto 0;
+  color: rgba($white, .6);
+  text-align: center;
+  span {
+    font-size: 2.5em;
+  }
+}
+
+.bonuses-3__list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+}
+
+.bonuses-3__list_item {
+  margin-right: 3em;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.bonuses-3__list_item_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  img {
+    width: 6em;
+  }
+}
