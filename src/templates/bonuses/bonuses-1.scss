@@ -1,4 +1,5 @@
 .bonuses-1 {
+  position: relative;
   margin: 6em 0;
   padding: 4em 5em 7em;
   box-sizing: border-box;
@@ -20,6 +21,7 @@
 }
 
 .bonuses-1__list_card {
+  position: relative;
   width: 100%;
   margin-right: 5em;
   &:last-child {
@@ -38,6 +40,17 @@
   &.card-4 {
     .bonuses-1__list_card_title {
       color: #fea429;
+    }
+  }
+  &.active {
+    .bonuses-1__list_card_progress {
+      &:before {
+        border-color: $green;
+      }
+    }
+    .bonuses-1__list_card_count {
+      border-color: $green;
+      color: $green;
     }
   }
 }
@@ -75,6 +88,10 @@
   &:last-child {
     margin-bottom: 0;
   }
+}
+
+.bonuses-1__list_card_btn {
+  display: none;
 }
 
 .bonuses-1__progress {
@@ -153,5 +170,88 @@
     height: 2px;
     box-sizing: border-box;
     border-top: 2px dashed #6f7578;
+  }
+}
+
+.bonuses-1__list_card_progress {
+  display: none;
+  position: absolute;
+  top: 4.5em;
+  left: -4em;
+  width: 4em;
+  height: calc(100% - 5.5em);
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    box-sizing: border-box;
+    border-left: 2px dashed #6f7578;
+  }
+}
+
+.bonuses-1__list_card_count {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 50%;
+  border: 1px solid #6f7578;
+  font-family: 'SF Pro Display Meduim', sans-serif;
+  color: #a8a8a8;
+  span {
+    font-size: 1.6em;
+  }
+}
+
+
+
+@media (max-width: 767.98px) {
+  .bonuses-1 {
+    margin: 3em 0;
+    padding: 3em 4em;
+  }
+  .bonuses-1__title {
+    font-size: 2em;
+    text-align: center;
+  }
+  .bonuses-1__list {
+    flex-wrap: wrap;
+  }
+  .bonuses-1__list_card {
+    margin-right: 0;
+    padding: 2em 0;
+  }
+  .bonuses-1__list_card_img {
+    padding: 0 2em;
+  }
+  .bonuses-1__list_card_title {
+    font-size: 2.2em;
+  }
+  .bonuses-1__list_card_desc {
+    font-size: 1.4em;
+  }
+  .bonuses-1__list_card_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+  }
+  .bonuses-1__list_card_progress {
+    display: block;
+  }
+  .bonuses-1__list_card_count {
+    display: flex;
+  }
+  .bonuses-1__progress {
+    display: none;
   }
 }

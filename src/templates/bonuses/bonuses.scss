@@ -6,6 +6,16 @@
   }
 }
 
+@media (max-width: 767.98px) {
+  .bonuses {
+    .settings__title {
+      img {
+        width: 2em;
+      }
+    }
+  }
+}
+
 @import "bonuses-1";
 @import "bonuses-2";
 @import "bonuses-3";
