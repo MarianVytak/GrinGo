@@ -1,0 +1,169 @@
+.bonuses-2 {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 2.3em -3.7em -3.7em;
+}
+
+.bonuses-2__card {
+  position: relative;
+  width: calc(100% / 2 - 7.4em);
+  height: 43em;
+  margin: 3.7em;
+  padding: 2.4em 4em;
+  box-sizing: border-box;
+  border-radius: 1em;
+  &.card-1 {
+    background-color: #2ca800;
+    .bonuses-2__card_img {
+      top: 50%;
+      right: -3.9em;
+      transform: translateY(-50%);
+      width: 33.3em;
+    }
+  }
+  &.card-2 {
+    background-color: #f54d08;
+    .bonuses-2__card_img {
+      top: -5em;
+      right: -7em;
+      width: 51.7em;
+    }
+    .bonuses-2__card_bot {
+      background-color: #ac3200;
+    }
+  }
+  &.card-3 {
+    background-color: #e1a114;
+    .bonuses-2__card_img {
+      top: -5.5em;
+      right: -13.5em;
+      width: 56.2em;
+    }
+    .bonuses-2__card_bot {
+      background-color: #b27f0f;
+    }
+  }
+  &.card-4 {
+    background-image: url(../../assets/img/bonuses-2__card-4.png);
+    background-size: cover;
+    .bonuses-2__card_bot {
+      background-color: #2d8a32;
+    }
+  }
+}
+
+.bonuses-2__card_title {
+  font-family: 'SF Pro Display Bold', sans-serif;
+  font-size: 4.5em;
+  color: $white;
+}
+
+.bonuses-2__card_desc {
+  margin-top: 1em;
+  font-family: 'SF Pro Display Semibold', sans-serif;
+  color: rgba($white, .6);
+  line-height: 1.5;
+  span {
+    font-size: 2em;
+  }
+}
+
+.bonuses-2__card_img {
+  position: absolute;
+  img {
+    width: 100%;
+  }
+}
+
+.bonuses-2__card_program {
+  margin: 1em 0;
+  font-family: 'SF Pro Display Meduim', sans-serif;
+  font-size: 1.5em;
+  color: rgba($black, .4);
+  text-transform: uppercase;
+  span {
+    font-size: 1.5em;
+    color: #1a6500;
+  }
+}
+
+.bonuses-2__card_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32em;
+  height: 8em;
+  border-radius: 4em;
+  margin-top: 2.5em;
+  background-color: #56b933;
+  font-family: 'SF Pro Display Bold', sans-serif;
+  color: $white;
+  img {
+    width: 3em;
+    margin-right: 2em;
+  }
+  span {
+    font-size: 1.8em;
+  }
+  &:hover {
+    background-color: lighten(#56b933, 5);
+  }
+}
+
+.bonuses-2__card_bonus {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 3.8em;
+  margin-bottom: 1.5em;
+  padding: 0 2em;
+  box-sizing: border-box;
+  border-radius: 1em;
+  border: 1px dashed rgba($black, .4);
+  font-family: 'SF Pro Display Bold', sans-serif;
+  color: rgba($black, .4);
+  text-transform: uppercase;
+  span {
+    font-size: 1.5em;
+  }
+}
+
+.bonuses-2__card_bot {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 12em;
+  padding: 0 3em;
+  box-sizing: border-box;
+  border-radius: 0 0 1em 1em;
+}
+
+.bonuses-2__card_bot_content {
+  font-family: 'SF Pro Display Semibold', sans-serif;
+  font-size: 1.8em;
+  color: rgba($white, .8);
+  line-height: 1.4;
+}
+
+.bonuses-2__card_bot_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28em;
+  height: 6em;
+  box-sizing: border-box;
+  border-radius: 1.5em;
+  background-color: rgba($white, .2);
+  font-family: 'SF Pro Display Bold', sans-serif;
+  color: $white;
+  span {
+    font-size: 2em;
+  }
+  &:hover {
+    background-color: rgba($white, .3);
+  }
+}
