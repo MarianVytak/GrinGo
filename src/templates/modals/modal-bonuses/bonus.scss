@@ -1,0 +1,142 @@
+.modal-bonus {
+  width: 100%;
+  max-width: 80em;
+  padding: 0;
+  box-sizing: border-box;
+  border-radius: 1.5em;
+  background-color: #2d313e;
+  &.bonus-1 {
+    .modal-bonus__head {
+      background-color: #2ca800;
+    }
+    .modal-bonus__head_img {
+      width: 43em;
+    }
+  }
+  &.bonus-2 {
+    .modal-bonus__head {
+      background-color: #f54d08;
+    }
+    .modal-bonus__head_img {
+      width: 43em;
+    }
+  }
+  &.bonus-3 {
+    .modal-bonus__head {
+      background-color: #e1a114;
+    }
+    .modal-bonus__head_img {
+      transform: translateY(-60%);
+      width: 40em;
+    }
+  }
+  &.bonus-4 {
+    .modal-bonus__head {
+      background-color: #f54d08;
+    }
+    .modal-bonus__head_img {
+      width: 43em;
+    }
+  }
+}
+
+.modal-bonus__head {
+  position: relative;
+  padding: 6em 5em;
+  border-radius: 1.5em 1.5em 0 0;
+  overflow: hidden;
+}
+
+.modal-bonus__title {
+  max-width: 30em;
+  font-family: 'SF Pro Display Bold', sans-serif;
+  color: $white;
+  span {
+    font-size: 4.8em;
+  }
+}
+
+.modal-bonus__head_img {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.modal-bonus__content {
+  position: relative;
+  max-height: 47.5em;
+  padding: 4em 5em 3em;
+  overflow-y: auto;
+  .mCSB_outside + .mCS-minimal.mCSB_scrollTools_vertical, .mCSB_outside + .mCS-minimal-dark.mCSB_scrollTools_vertical {
+    right: 0;
+  }
+}
+
+.modal-bonus__content_title {
+  margin-bottom: 2.5em;
+  font-family: 'SF Pro Display Semibold', sans-serif;
+  color: $white;
+  text-align: center;
+  span {
+    font-size: 3.5em;
+  }
+}
+
+.modal-bonus__content_text {
+  font-size: 1.8em;
+  color: $white;
+}
+
+.modal-bonus__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3em 5em 4em;
+  .btn {
+    width: 28em;
+  }
+}
+
+
+
+@media (max-width: 767.98px) {
+  .modal-bonus {
+    height: 100vh;
+    border-radius: 0;
+    background-color: transparent;
+  }
+  .modal-bonus__head {
+    padding: 1em;
+    border-radius: 0;
+  }
+  .modal-bonus__title {
+    max-width: none;
+    span {
+      font-size: 2.5em;
+    }
+  }
+  .modal-bonus__head_img {
+    display: none;
+  }
+  .modal-bonus__content {
+    max-height: none;
+    overflow-y: hidden;
+    padding: 1em;
+  }
+  .modal-bonus__content_title {
+    margin-bottom: 1.5em;
+    span {
+      font-size: 2em;
+    }
+  }
+  .modal-bonus__content_text {
+    font-size: 1.2em;
+  }
+  .modal-bonus__btn {
+    padding: 1em;
+    .btn {
+      width: 18em;
+    }
+  }
+}
