@@ -42,13 +42,19 @@
 }
 
 .balance__item {
+  position: relative;
   width: calc(50% - 3em);
   margin: 2em 1.5em;
   padding: 2.5em;
   box-sizing: border-box;
   border-radius: 1em;
   background-color: rgba($white, .04);
+  &.item-1 {
+    width: calc(50% - 3em);
+  }
   &.item-2 {
+    width: 100%;
+    margin: 0;
     .balance__item_user {
       display: flex;
       align-items: center;
@@ -58,6 +64,25 @@
     }
   }
   &.item-3 {
+    width: 100%;
+    margin: 1em 0 0 0;
+    padding: 1.7em 2.5em;
+    .balance__item_user {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 17em;
+      padding: 0;
+      img {
+        width: 2.5em;
+        margin-left: 1em;
+      }
+    }
+    .balance__item_user_balance {
+      color: #bf00f8;
+    }
+  }
+  &.item-4 {
     width: calc(100% - 3em);
     padding: 2.5em 2.5em 7.5em;
     .balance__item_title {
@@ -85,6 +110,34 @@
         color: rgba($black, .8);
       }
     }
+  }
+  .toggle-checkbox {
+    position: absolute;
+    top: 50%;
+    right: 2.5em;
+    transform: translateY(-50%);
+  }
+}
+
+.balance__item_double {
+  width: calc(50% - 3em);
+  margin: 2em 1.5em;
+}
+
+.balance__item_user_exchange {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5em;
+  height: 2.5em;
+  margin-right: 1em;
+  box-sizing: border-box;
+  border-radius: 50%;
+  background-color: #2e333b;
+  cursor: pointer;
+  span {
+    font-size: 1.8em;
+    color: $white;
   }
 }
 
@@ -151,7 +204,7 @@
 
 .balance__item_title {
   font-family: 'SF Pro Display Meduim', sans-serif;
-  font-size: 2.5em;
+  font-size: 2.1em;
   color: $white;
   text-align: right;
 }
@@ -457,12 +510,21 @@
     width: 100%;
     margin: 1em 0;
     padding: 1em;
+    &.item-1 {
+      width: 100%;
+    }
     &.item-2 {
       .balance__item_user {
-        width: 17em;
+        width: 14em;
       }
     }
     &.item-3 {
+      padding: 1em;
+      .balance__item_user {
+        width: 14em;
+      }
+    }
+    &.item-4 {
       width: 100%;
       padding: 1em;
       .balance__item_top {
@@ -476,6 +538,15 @@
         }
       }
     }
+    .toggle-checkbox {
+      top: 1em;
+      right: 1em;
+      transform: none;
+    }
+  }
+  .balance__item_double {
+    width: 100%;
+    margin: 1em 0;
   }
   .balance__item_bot {
     margin-top: 2em;
