@@ -1,0 +1,63 @@
+.modal-bonus-cancel {
+  display: none;
+  width: 100%;
+  max-width: 52em;
+  padding: 3em 5em;
+  box-sizing: border-box;
+  border-radius: 1.5em;
+  border: solid 1px #363e47;
+  backdrop-filter: blur(1.5em);
+  background-color: #22252e;
+  cursor: default !important;
+}
+
+.modal-bonus-cancel__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-bonus-cancel__logo {
+  margin-right: 1.5em;
+  img {
+    width: 7.5em;
+  }
+}
+
+.modal-bonus-cancel__content {
+  margin-top: 2em;
+  font-family: 'SF Pro Display Meduim', sans-serif;
+  color: $white;
+  text-align: center;
+  span {
+    font-size: 2.2em;
+  }
+}
+
+.modal-bonus-cancel__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3em;
+  .btn {
+    width: 25em;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .modal-bonus-cancel {
+    padding: 0;
+    border-radius: 0;
+    border: none;
+    backdrop-filter: none;
+    background-color: transparent;
+  }
+  .modal-bonus-cancel__logo {
+    margin-right: 0.5em;
+  }
+  .modal-bonus-cancel__content {
+    span {
+      font-size: 1.4em;
+    }
+  }
+}
