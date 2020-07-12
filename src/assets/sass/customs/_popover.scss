@@ -35,7 +35,6 @@
   box-sizing: border-box;
   border-radius: 1em;
   background-color: #317a17;
-  font-size: 10px;
   z-index: 2;
   &:before {
     content: '';
@@ -70,5 +69,36 @@
     span {
       font-size: 1.3em;
     }
+  }
+}
+
+.popover-news {
+  position: fixed;
+  top: 8em;
+  right: 10em;
+  width: 34em;
+  padding: 1.2em 2.5em;
+  box-sizing: border-box;
+  border-radius: 0.5em;
+  background-color: #317a17;
+  z-index: 99999;
+}
+
+.popover-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(50%,-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: #4a4a4a;
+  cursor: pointer;
+  color: $white;
+  span {
+    font-size: 2em;
   }
 }

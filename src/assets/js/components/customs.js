@@ -161,4 +161,11 @@ $(function () {
 
 
 
+    // Popover News Closed
+    $('.popover-close').on('click', function () {
+        $('.popover-news').css({display: 'none'});
+    });
+
+
+
 });
