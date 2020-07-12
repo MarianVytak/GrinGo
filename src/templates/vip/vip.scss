@@ -1,0 +1,249 @@
+.vip {
+  .balance__item_top {
+    justify-content: flex-start;
+    width: 100%;
+  }
+  .balance__item {
+    display: flex;
+    align-items: center;
+    height: 10.5em;
+    padding: 0 2.5em;
+    &.item-3 {
+      margin: 0;
+      .balance__item_top {
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+.balance__item {
+  .user__icon {
+    position: relative;
+    top: auto;
+    right: auto;
+    width: 7em;
+    height: 7em;
+    margin-right: 2em;
+    border: 3px solid #484d55;
+  }
+  .user__icon_progress {
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    background-color: transparent;
+  }
+}
+
+.user__icon_status {
+  width: 4em;
+}
+
+.balance__item_progress {
+  margin-top: 0.5em;
+  font-size: 1.6em;
+  color: rgba($white, .3);
+  span {
+    color: $white;
+    text-transform: uppercase;
+  }
+}
+
+.vip__exchange-rate {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 1em;
+}
+
+.vip__exchange-rate_icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2em;
+  height: 2em;
+  margin: 0 0.5em;
+  border-radius: 50%;
+  background-color: rgba($white, .25);
+  color: #23262f;
+  cursor: pointer;
+  span {
+    font-size: 1.4em;
+  }
+}
+
+.vip__exchange-rate_text {
+  font-size: 1.6em;
+  color: rgba($white, .4);
+}
+
+.vip__exchange-rate_value {
+  font-family: 'SF Pro Display Semibold', sans-serif;
+  font-size: 1.6em;
+  color: rgba($white, .5);
+}
+
+.vip__status {
+  margin: 4em -5em 0;
+  padding: 2.5em 5em;
+  box-sizing: border-box;
+  border-radius: 1em;
+  box-shadow: 0 0.5em 1.5em 0 rgba(0, 0, 0, 0.15);
+  background-color: #232734;
+}
+
+.vip__status_title {
+  font-family: 'SF Pro Display Meduim', sans-serif;
+  font-size: 3.2em;
+  color: $white;
+  span {
+    color: $green;
+  }
+}
+
+.vip__status_subtitle {
+  margin-top: 0.5em;
+  font-family: 'SF Pro Display Meduim', sans-serif;
+  color: rgba($white, .6);
+  span {
+    font-size: 2.2em;
+  }
+}
+
+.vip__status_list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2em;
+  padding-bottom: 5em;
+}
+
+.vip__status_list_item {
+  position: relative;
+  width: 20em;
+  height: 30em;
+  box-sizing: border-box;
+  border-radius: 1em;
+  border: 0.3em solid transparent;
+  text-align: center;
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: -0.3em;
+    left: 0;
+    width: 100%;
+    height: 1.2em;
+    border-radius: 1.2em;
+    background-color: $green;
+  }
+  &.active {
+    border-color: $green;
+    background-image: linear-gradient(to bottom, rgba(#2C2F3A, .3) 0%, rgba(#55C12F, .3) 100%);
+    .vip__status_list_item_status {
+      display: flex;
+    }
+  }
+}
+
+.vip__status_list_item_status {
+  position: absolute;
+  top: 1em;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  width: 9.5em;
+  height: 2em;
+  border-radius: 2em;
+  background-color: $green;
+  color: #d8ffce;
+  text-transform: uppercase;
+  span {
+    font-size: 1.2em;
+  }
+}
+
+.vip__status_list_item_img {
+  position: absolute;
+  top: 4em;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 16em;
+}
+
+.vip__status_list_item_label {
+  position: absolute;
+  bottom: 3em;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'SF Pro Display Bold', sans-serif;
+  color: $white;
+  text-transform: uppercase;
+  span {
+    font-size: 1.7em;
+  }
+}
+
+.vip__status_list_item_value {
+  position: absolute;
+  left: 50%;
+  bottom: -2em;
+  transform: translate(-50%,100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 10em;
+  height: 3em;
+  border-radius: 3em;
+  background-color: rgba(#317a17, .2);
+  color: rgba($white, .7);
+  span {
+    font-size: 1.5em;
+  }
+}
+
+.vip__details {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6em;
+  padding: 2em 3em;
+  box-sizing: border-box;
+  border-radius: 1em;
+  background-color: rgba($white, .02);
+}
+
+.vip__details_content {}
+
+.vip__details_title {
+  font-family: 'SF Pro Display Meduim', sans-serif;
+  font-size: 2.3em;
+  color: $white;
+}
+
+.vip__details_subtitle {
+  margin-top: 0.5em;
+  font-size: 2.1em;
+  color: rgba($white, .3);
+}
+
+.vip__details_btn {
+  .btn {
+    width: 30.5em;
+    height: 6em;
+    span {
+      font-size: 2em;
+    }
+  }
+}
+
+
+
+@media (max-width: 767.98px) {
+  .vip {
+    .balance__item {
+      padding: 0 1em;
+    }
+  }
+}

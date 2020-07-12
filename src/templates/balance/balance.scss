@@ -19,7 +19,6 @@
   align-items: flex-start;
   justify-content: flex-start;
   flex-wrap: wrap;
-  width: 100%;
   margin: 2em -1.5em -2em;
 }
 
@@ -45,10 +44,22 @@
   background-color: rgba($white, .04);
   &.item-1 {
     width: calc(50% - 3em);
+    .balance__item_title {
+      justify-content: flex-end;
+    }
+    .balance__item_subtitle {
+      text-align: right;
+    }
   }
   &.item-2 {
     width: 100%;
     margin: 0;
+    .balance__item_title {
+      justify-content: flex-end;
+    }
+    .balance__item_subtitle {
+      text-align: right;
+    }
     .balance__item_user {
       display: flex;
       align-items: center;
@@ -61,6 +72,12 @@
     width: 100%;
     margin: 1em 0 0 0;
     padding: 1.7em 2.5em;
+    .balance__item_title {
+      justify-content: flex-end;
+    }
+    .balance__item_subtitle {
+      text-align: right;
+    }
     .balance__item_user {
       display: flex;
       align-items: center;
@@ -79,12 +96,6 @@
   &.item-4 {
     width: calc(100% - 3em);
     padding: 2.5em 2.5em 7.5em;
-    .balance__item_title {
-      justify-content: flex-start;
-    }
-    .balance__item_subtitle {
-      justify-content: flex-start;
-    }
     .balance__item_right {
       display: flex;
       align-items: center;
@@ -108,12 +119,6 @@
   &.item-5 {
     width: calc(100% - 3em);
     padding-bottom: 0;
-    .balance__item_title {
-      justify-content: flex-start;
-    }
-    .balance__item_subtitle {
-      justify-content: flex-start;
-    }
   }
   .toggle-checkbox {
     position: absolute;
@@ -257,7 +262,7 @@
 .balance__item_title {
   display: flex;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: flex-start;
   font-family: 'SF Pro Display Meduim', sans-serif;
   color: $white;
   span {
@@ -269,7 +274,6 @@
   margin-top: 0.5em;
   font-size: 1.5em;
   color: rgba($white, .3);
-  text-align: right;
 }
 
 .balance__item_bot {
@@ -627,7 +631,9 @@
     font-size: 1.6em;
   }
   .balance__item_title {
-    font-size: 1.8em;
+    span {
+      font-size: 1.8em;
+    }
   }
   .balance__item_subtitle {
     font-size: 1.2em;
