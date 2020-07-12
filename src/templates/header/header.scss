@@ -178,6 +178,14 @@
   align-items: center;
   justify-content: flex-end;
   text-align: right;
+  line-height: 1;
+}
+
+.user__level_status {
+  margin-right: 0.5em;
+  img {
+    width: 1.8em;
+  }
 }
 
 .user__level_value {
