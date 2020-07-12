@@ -4,12 +4,6 @@
   .balance__item_top {
     justify-content: flex-start;
   }
-  .balance__item_title {
-    text-align: left;
-  }
-  .balance__item_subtitle {
-    text-align: left;
-  }
 }
 
 .balance-3 {
@@ -86,10 +80,10 @@
     width: calc(100% - 3em);
     padding: 2.5em 2.5em 7.5em;
     .balance__item_title {
-      text-align: left;
+      justify-content: flex-start;
     }
     .balance__item_subtitle {
-      text-align: left;
+      justify-content: flex-start;
     }
     .balance__item_right {
       display: flex;
@@ -265,33 +259,9 @@
   align-items: center;
   justify-content: flex-end;
   font-family: 'SF Pro Display Meduim', sans-serif;
-  font-size: 2.1em;
   color: $white;
-  text-align: right;
-  .info-link {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 1.5em;
-    height: 1.5em;
-    margin-right: 0.5em;
-    border-radius: 50%;
-    background-color: rgba($white, .25);
-    font-size: 0.7em;
-    color: #23262f;
-    cursor: pointer;
-    &:hover {
-      .popover {
-        display: block;
-      }
-    }
-  }
-  .popover {
-    top: 2em;
-    left: 50%;
-    transform: translateX(-50%);
-    display: none;
+  span {
+    font-size: 2.1em;
   }
 }
 

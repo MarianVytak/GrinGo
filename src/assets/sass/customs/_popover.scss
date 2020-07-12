@@ -1,5 +1,35 @@
 .popover {
+  position: relative;
+  cursor: pointer;
+  &:hover {
+    .popover-content {
+      display: block;
+    }
+  }
+}
+
+.popover-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2em;
+  height: 2em;
+  margin: 0 0.5em;
+  border-radius: 50%;
+  background-color: rgba($white, .25);
+  color: #23262f;
+  cursor: pointer;
+  span {
+    font-size: 1.4em !important;
+  }
+}
+
+.popover-content {
   position: absolute;
+  top: 2em;
+  left: 50%;
+  transform: translateX(-50%);
+  display: none;
   width: 37em;
   padding: 2em;
   box-sizing: border-box;
