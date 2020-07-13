@@ -8,6 +8,7 @@
     overflow: visible;
     &.bonuses {
       max-width: 163.4em;
+      padding-top: 12em;
     }
   }
   .side-menu {
@@ -110,6 +111,9 @@
       max-width: none;
       width: 100%;
       padding: 2em 1em 0;
+      &.bonuses {
+        padding-top: 10em;
+      }
     }
     .footer__lvl2 {
       .footer__icons {

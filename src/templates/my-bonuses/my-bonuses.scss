@@ -1,0 +1,271 @@
+.my-bonuses {
+  .balance__item {
+    display: flex;
+    align-items: center;
+    height: 12em;
+    padding: 0 2.5em;
+    &.item-2 {
+      .balance__item_top {
+        justify-content: space-between;
+      }
+    }
+    &.item-3 {
+      margin: 0;
+      .balance__item_top {
+        justify-content: space-between;
+      }
+    }
+  }
+  .promo-label {
+    margin-bottom: -5px;
+  }
+}
+
+.balance__item {
+  &.promo {
+    flex-wrap: wrap;
+    label {
+      width: 100%;
+    }
+  }
+}
+
+.promo-label {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  color: rgba($white, .6);
+  span {
+    font-size: 1.8em;
+  }
+}
+
+.promo-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  .btn {
+    font-size: 0.52vw;
+    width: 15em;
+    height: 6em;
+    margin-left: 1.5em;
+  }
+}
+
+.balance__table_item_time {
+  justify-content: flex-end;
+}
+.balance__table_item_wager {
+  justify-content: center;
+}
+.balance__table_item_bonus {
+  justify-content: center;
+}
+.balance__table_item_btn {
+  justify-content: center;
+}
+
+.balance__table_body {
+  .balance__table_item_time {
+    color: #78797d;
+    span {
+      font-size: 1.5em;
+    }
+  }
+  .balance__table_item_wager {
+    color: #707175;
+    span {
+      font-size: 1.8em;
+    }
+  }
+  .balance__table_item_bonus {
+    font-family: 'SF Pro Display Semibold', sans-serif;
+    color: rgba($white, .8);
+    text-transform: uppercase;
+    span {
+      padding: 0.2em 0.8em;
+      box-sizing: border-box;
+      border-radius: 3em;
+      border: 1px dashed rgba($white, .2);
+      font-size: 1.6em;
+    }
+  }
+  .balance__table_item_btn {
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 12em;
+      height: 3em;
+      box-sizing: border-box;
+      border-radius: 3em;
+      background-color: rgba($black, .2);
+      color: rgba($white, .4);
+      &:hover {
+        background-color: rgba($black, .6);
+        color: rgba($white, .8);
+      }
+      span {
+        font-size: 1.4em;
+      }
+    }
+  }
+}
+
+.my-bonuses__table-1 {
+  .balance__table_item {
+    -ms-grid-columns: 1.2fr 1fr 1fr 1fr 1fr 1.2fr;
+    grid-template-columns: 1.2fr 1fr 1fr 1fr 1fr 1.2fr;
+  }
+  .balance__table_body {
+    .balance__table_item_sum {
+      color: $white;
+    }
+  }
+  .balance__table_item_name {
+    -ms-grid-column: 1;
+  }
+  .balance__table_item_date {
+    -ms-grid-column: 2;
+  }
+  .balance__table_item_time {
+    -ms-grid-column: 3;
+  }
+  .balance__table_item_sum {
+    -ms-grid-column: 4;
+  }
+  .balance__table_item_wager {
+    -ms-grid-column: 5;
+  }
+  .balance__table_item_bonus {
+    -ms-grid-column: 6;
+  }
+}
+
+.my-bonuses__table-2 {
+  .balance__table_item {
+    -ms-grid-columns: 1.3fr 1fr 1fr 1fr 0.8fr 1fr 1fr;
+    grid-template-columns: 1.3fr 1fr 1fr 1fr 0.8fr 1fr 1fr;
+  }
+  .balance__table_item_name {
+    -ms-grid-column: 1;
+  }
+  .balance__table_item_date {
+    -ms-grid-column: 2;
+  }
+  .balance__table_item_time {
+    -ms-grid-column: 3;
+  }
+  .balance__table_item_sum {
+    -ms-grid-column: 4;
+  }
+  .balance__table_item_wager {
+    -ms-grid-column: 5;
+  }
+  .balance__table_item_status {
+    -ms-grid-column: 6;
+  }
+  .balance__table_item_btn {
+    -ms-grid-column: 7;
+  }
+}
+
+
+
+@media (max-width: 767.98px) {
+  .my-bonuses {
+    .balance__item {
+      height: 10em;
+      padding: 0 1em;
+    }
+  }
+  .promo-form {
+    label {
+      height: 4em;
+    }
+    .btn {
+      height: 4em;
+      width: 12em;
+      font-size: 10px;
+    }
+  }
+  .promo-label {
+    span {
+      font-size: 1.4em;
+    }
+  }
+  .my-bonuses__table-1 {
+    width: 95em;
+    .balance__table_item {
+      -ms-grid-columns: 200px 160px 140px 150px 80px 200px;
+      grid-template-columns: 200px 160px 140px 150px 80px 200px;
+    }
+    .balance__table_item_name {
+      display: flex;
+      -ms-grid-column: 1;
+      grid-column: 1;
+    }
+    .balance__table_item_date {
+      display: flex;
+      -ms-grid-column: 2;
+      grid-column: 2;
+    }
+    .balance__table_item_time {
+      -ms-grid-column: 3;
+      grid-column: 3;
+    }
+    .balance__table_item_sum {
+      display: flex;
+      -ms-grid-column: 4;
+      grid-column: 4;
+    }
+    .balance__table_item_wager {
+      -ms-grid-column: 5;
+      grid-column: 5;
+    }
+    .balance__table_item_bonus {
+      -ms-grid-column: 6;
+      grid-column: 6;
+    }
+  }
+  .my-bonuses__table-2 {
+    width: 104em;
+    .balance__table_item {
+      -ms-grid-columns: 200px 160px 140px 150px 80px 100px 200px;
+      grid-template-columns: 200px 160px 140px 150px 80px 100px 200px;
+    }
+    .balance__table_item_name {
+      display: flex;
+      -ms-grid-column: 1;
+      grid-column: 1;
+    }
+    .balance__table_item_date {
+      display: flex;
+      -ms-grid-column: 2;
+      grid-column: 2;
+    }
+    .balance__table_item_time {
+      -ms-grid-column: 3;
+      grid-column: 3;
+    }
+    .balance__table_item_sum {
+      display: flex;
+      -ms-grid-column: 4;
+      grid-column: 4;
+    }
+    .balance__table_item_wager {
+      -ms-grid-column: 5;
+      grid-column: 5;
+    }
+    .balance__table_item_status {
+      display: flex;
+      -ms-grid-column: 6;
+      grid-column: 6;
+    }
+    .balance__table_item_btn {
+      -ms-grid-column: 7;
+      grid-column: 7;
+    }
+  }
+}

@@ -8,6 +8,11 @@
     align-items: center;
     height: 10.5em;
     padding: 0 2.5em;
+    &.item-2 {
+      .balance__item_top {
+        justify-content: space-between;
+      }
+    }
     &.item-3 {
       margin: 0;
       .balance__item_top {

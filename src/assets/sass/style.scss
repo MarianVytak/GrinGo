@@ -22,11 +22,12 @@ Table of contents
 ## Live
 ## Game
 ## Slots
+## Bonuses
 ## Settings
 ## Balance
-## Bonuses
-## Featured
+## My Bonuses
 ## VIP
+## Featured
 ## Modals
 ## Preloader
 ## Media
@@ -118,6 +119,10 @@ Table of contents
 ====================*/
 @import "../../templates/slots/slots";
 
+/* ## Bonuses
+====================*/
+@import "../../templates/bonuses/bonuses";
+
 /* ## Settings
 ====================*/
 @import "../../templates/settings/settings";
@@ -126,17 +131,17 @@ Table of contents
 ====================*/
 @import "../../templates/balance/balance";
 
-/* ## Bonuses
+/* ## My Bonuses
 ====================*/
-@import "../../templates/bonuses/bonuses";
-
-/* ## Featured
-====================*/
-@import "../../templates/featured/featured";
+@import "../../templates/my-bonuses/my-bonuses";
 
 /* ## VIP
 ====================*/
 @import "../../templates/vip/vip";
+
+/* ## Featured
+====================*/
+@import "../../templates/featured/featured";
 
 /* ## Modals
 ====================*/
