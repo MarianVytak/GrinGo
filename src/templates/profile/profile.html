@@ -1,0 +1,314 @@
+<div class="profile">
+
+    <div class="settings__title">
+        <img src="../../assets/img/svg/heart-outline.svg" alt="">
+        <span>Мой профиль</span>
+    </div>
+    <div class="settings__subtitle">Ваши персональные данные и настройки</div>
+
+    <div class="balance__item profile__status">
+        <div class="balance__item_top">
+            <div class="balance__item_left">
+                <div class="user__icon">
+                    <div class="user__icon_status">
+                        <img src="../../assets/img/svg/status-5.svg" alt="">
+                    </div>
+                    <div class="user__icon_progress"></div>
+                </div>
+            </div>
+            <div class="balance__item_right">
+                <div class="balance__item_title">
+                    <span>Бриллиантовый статус</span>
+                    <div class="popover">
+                        <div class="popover-link"><span>?</span></div>
+                        <div class="popover-content">
+                            <div class="popover-text">
+                                <b>Это статус в нашем VIP клубе Gringo.</b><br>
+                                Для обладателей статусов мы дарим: самые лучшие бонусы в СНГ, акции, кэшбеки, подарки и персональные турниры!
+                            </div>
+                            <div class="popover-btn">
+                                <a href="#" class="btn">
+                                    <span>Подробнее о статусах</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="balance__item_progress">
+                    <span>5 Уровень</span> &nbsp; 25% прогресс
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile__data">
+        <div class="form-title">Персональные данные</div>
+        <div class="profile__data_grid">
+            <div class="profile__data_logo"><span>DG</span></div>
+            <form class="form profile__data_form">
+                <div class="profile__data_form_grid">
+                    <div class="form-group group-1">
+                        <div class="input-label">Ваше имя</div>
+                        <label class="input">
+                            <input type="text" placeholder="Введите имя">
+                        </label>
+                    </div>
+                    <div class="form-group group-2">
+                        <div class="input-label">Ваша Фамилия</div>
+                        <label class="input">
+                            <input type="text" placeholder="Введите фамилию">
+                        </label>
+                    </div>
+                    <div class="form-group group-3">
+                        <div class="profile__country">
+                            <div class="profile__country_item">
+                                <div class="input-label">Ваша страна</div>
+                                <label class="input">
+                                    <input type="text" placeholder="Введите страну">
+                                </label>
+                            </div>
+                            <div class="profile__country_item">
+                                <div class="input-label">Ваша валюта</div>
+                                <div class="modal-registration__dropdown dropdown">
+                                    <a href="#registration-currency-1" class="modal-registration__dropdown_link js-dropdown-link">
+                                        <span class="sort-label registration-currency-value">RUB</span>
+                                        <span class="arrow"></span>
+                                    </a>
+                                    <div class="dropdown__content js-dropdown-content" id="registration-currency-1">
+                                        <ul class="dropdown__content_list">
+                                            <li class="dropdown__content_list_item">
+                                                <a href="#" class="dropdown__content_list_item_link active" data-target=".registration-currency-value">RUB</a>
+                                            </li>
+                                            <li class="dropdown__content_list_item">
+                                                <a href="#" class="dropdown__content_list_item_link" data-target=".registration-currency-value">UAH</a>
+                                            </li>
+                                            <li class="dropdown__content_list_item">
+                                                <a href="#" class="dropdown__content_list_item_link" data-target=".registration-currency-value">USD</a>
+                                            </li>
+                                            <li class="dropdown__content_list_item">
+                                                <a href="#" class="dropdown__content_list_item_link" data-target=".registration-currency-value">EUR</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!-- /.modal-registration__dropdown -->
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group group-4">
+                        <div class="input-label">Пол</div>
+                        <div class="profile__gender">
+                            <label class="radio">
+                                <input class="radio__input" type="radio" name="profile-gender">
+                                <span class="radio__box"><span>Женский</span></span>
+                            </label>
+                            <label class="radio">
+                                <input class="radio__input" type="radio" name="profile-gender" checked>
+                                <span class="radio__box"><span>Мужской</span></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group group-5">
+                        <div class="input-label">Ваш номер телефона</div>
+                        <div class="input-phone">
+                            <label class="input input-phone-country">
+                                <img src="../../assets/img/icons/ru.png" alt="" class="flag">
+                                <input type="text" value="+380">
+                            </label>
+                            <label class="input">
+                                <input type="text" placeholder="(XXX) XXX - XX - XX">
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group group-6">
+                        <div class="input-label">Дата рождения</div>
+                        <div class="form-birthday">
+                            <div class="modal-registration__dropdown dropdown day">
+                                <a href="#profile-birthday" class="modal-registration__dropdown_link js-dropdown-link">
+                                    <span class="sort-label profile-day">11</span>
+                                    <span class="arrow"></span>
+                                </a>
+                                <div class="dropdown__content js-dropdown-content" id="profile-birthday">
+                                    <ul class="dropdown__content_list">
+                                        <li class="dropdown__content_list_item">
+                                            <a href="#" class="dropdown__content_list_item_link active" data-target=".profile-day">1</a>
+                                        </li>
+                                        <li class="dropdown__content_list_item">
+                                            <a href="#" class="dropdown__content_list_item_link" data-target=".profile-day">2</a>
+                                        </li>
+                                        <li class="dropdown__content_list_item">
+                                            <a href="#" class="dropdown__content_list_item_link" data-target=".profile-day">3</a>
+                                        </li>
+                                        <li class="dropdown__content_list_item">
+                                            <a href="#" class="dropdown__content_list_item_link" data-target=".profile-day">4</a>
+                                        </li>
+                                        <li class="dropdown__content_list_item">
+                                            <a href="#" class="dropdown__content_list_item_link" data-target=".profile-day">5</a>
+                                        </li>
+                                        <li class="dropdown__content_list_item">
+                                            <a href="#" class="dropdown__content_list_item_link" data-target=".profile-day">6</a>
+                                        </li>
+                                        <li class="dropdown__content_list_item">
+                                            <a href="#" class="dropdown__content_list_item_link" data-target=".profile-day">7</a>
+                                        </li>
+                                        <li class="dropdown__content_list_item">
+                                            <a href="#" class="dropdown__content_list_item_link" data-target=".profile-day">8</a>
+                                        </li>
+                                        <li class="dropdown__content_list_item">
+                                            <a href="#" class="dropdown__content_list_item_link" data-target=".profile-day">9</a>
+                                        </li>
+                                        <li class="dropdown__content_list_item">
+                                            <a href="#" class="dropdown__content_list_item_link" data-target=".profile-day">10</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- /.modal-registration__dropdown -->
+                            <div class="modal-registration__dropdown dropdown month">
+                                <a href="#profile-month" class="modal-registration__dropdown_link js-dropdown-link">
+                                    <span class="sort-label profile-month">Месяц</span>
+                                    <span class="arrow"></span>
+                                </a>
+                                <div class="dropdown__content js-dropdown-content" id="profile-month">
+                                    <ul class="dropdown__content_list">
+                                        <li class="dropdown__content_list_item">
+                                            <a href="#" class="dropdown__content_list_item_link active" data-target=".profile-month">Січень</a>
+                                        </li>
+                                        <li class="dropdown__content_list_item">
+                                            <a href="#" class="dropdown__content_list_item_link" data-target=".profile-month">Лютий</a>
+                                        </li>
+                                        <li class="dropdown__content_list_item">
+                                            <a href="#" class="dropdown__content_list_item_link" data-target=".profile-month">Березень</a>
+                                        </li>
+                                        <li class="dropdown__content_list_item">
+                                            <a href="#" class="dropdown__content_list_item_link" data-target=".profile-month">Квітень</a>
+                                        </li>
+                                        <li class="dropdown__content_list_item">
+                                            <a href="#" class="dropdown__content_list_item_link" data-target=".profile-month">Травень</a>
+                                        </li>
+                                        <li class="dropdown__content_list_item">
+                                            <a href="#" class="dropdown__content_list_item_link" data-target=".profile-month">Червень</a>
+                                        </li>
+                                        <li class="dropdown__content_list_item">
+                                            <a href="#" class="dropdown__content_list_item_link" data-target=".profile-month">Липень</a>
+                                        </li>
+                                        <li class="dropdown__content_list_item">
+                                            <a href="#" class="dropdown__content_list_item_link" data-target=".profile-month">Серпень</a>
+                                        </li>
+                                        <li class="dropdown__content_list_item">
+                                            <a href="#" class="dropdown__content_list_item_link" data-target=".profile-month">Вересень</a>
+                                        </li>
+                                        <li class="dropdown__content_list_item">
+                                            <a href="#" class="dropdown__content_list_item_link" data-target=".profile-month">Жовтень</a>
+                                        </li>
+                                        <li class="dropdown__content_list_item">
+                                            <a href="#" class="dropdown__content_list_item_link" data-target=".profile-month">Дистопад</a>
+                                        </li>
+                                        <li class="dropdown__content_list_item">
+                                            <a href="#" class="dropdown__content_list_item_link" data-target=".profile-month">Грудень</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- /.modal-registration__dropdown -->
+                            <div class="modal-registration__dropdown dropdown year">
+                                <a href="#profile-year" class="modal-registration__dropdown_link js-dropdown-link">
+                                    <span class="sort-label profile-year">Год</span>
+                                    <span class="arrow"></span>
+                                </a>
+                                <div class="dropdown__content js-dropdown-content" id="profile-year">
+                                    <ul class="dropdown__content_list">
+                                        <li class="dropdown__content_list_item">
+                                            <a href="#" class="dropdown__content_list_item_link active" data-target=".profile-year">1991</a>
+                                        </li>
+                                        <li class="dropdown__content_list_item">
+                                            <a href="#" class="dropdown__content_list_item_link" data-target=".profile-year">1992</a>
+                                        </li>
+                                        <li class="dropdown__content_list_item">
+                                            <a href="#" class="dropdown__content_list_item_link" data-target=".profile-year">1993</a>
+                                        </li>
+                                        <li class="dropdown__content_list_item">
+                                            <a href="#" class="dropdown__content_list_item_link" data-target=".profile-year">1994</a>
+                                        </li>
+                                        <li class="dropdown__content_list_item">
+                                            <a href="#" class="dropdown__content_list_item_link" data-target=".profile-year">1995</a>
+                                        </li>
+                                        <li class="dropdown__content_list_item">
+                                            <a href="#" class="dropdown__content_list_item_link" data-target=".profile-year">1996</a>
+                                        </li>
+                                        <li class="dropdown__content_list_item">
+                                            <a href="#" class="dropdown__content_list_item_link" data-target=".profile-year">1997</a>
+                                        </li>
+                                        <li class="dropdown__content_list_item">
+                                            <a href="#" class="dropdown__content_list_item_link" data-target=".profile-year">1998</a>
+                                        </li>
+                                        <li class="dropdown__content_list_item">
+                                            <a href="#" class="dropdown__content_list_item_link" data-target=".profile-year">1999</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- /.modal-registration__dropdown -->
+                        </div>
+                    </div>
+                </div>
+                <!-- /.profile__data_form_grid -->
+                <div class="profile__data_form_bot">
+                    <div class="form-btn">
+                        <button class="btn">
+                            <span>Принять изменения</span>
+                        </button>
+                    </div>
+                    <div class="profile__data_social">
+                        <div class="profile__data_social_content">
+                            <div class="profile__data_social_title"><span>Привязка соцсетей</span></div>
+                            <div class="profile__data_social_subtitle">У вас не привязано ни одной соцсети</div>
+                        </div>
+                        <ul class="profile__data_social_list">
+                            <li class="profile__data_social_list_item">
+                                <a href="#" class="profile__data_social_list_item_link">
+                                    <img src="../../assets/img/svg/login-vk.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="profile__data_social_list_item">
+                                <a href="#" class="profile__data_social_list_item_link">
+                                    <img src="../../assets/img/svg/login-fb.svg" alt="">
+                                </a>
+                            </li>
+                            <li class="profile__data_social_list_item">
+                                <a href="#" class="profile__data_social_list_item_link">
+                                    <img src="../../assets/img/svg/login-od.svg" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- /.profile__data_form_bot -->
+            </form>
+        </div>
+        <!-- /.profile__data_grid -->
+    </div>
+    <!-- /.profile__data -->
+
+    <div class="profile__password">
+        <div class="profile__data_social_title"><span>Смена пароля</span></div>
+        <form class="profile__password_form">
+            <label class="input">
+                <input type="password" placeholder="Введите текущий пароль">
+            </label>
+            <label class="input success">
+                <input type="password" placeholder="Введите новий пароль">
+            </label>
+            <label class="input error">
+                <input type="password" placeholder="Повторите пароль">
+                <span class="label-error">*Не может быть пустым</span>
+            </label>
+            <button class="btn">
+                <span>Сменить</span>
+            </button>
+        </form>
+    </div>
+    <!-- /.profile__password -->
+
+</div>
+<!-- /.profile -->
