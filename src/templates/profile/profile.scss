@@ -251,6 +251,11 @@
 
 
 @media (max-width: 767.98px) {
+  .balance__item {
+    &.profile__status {
+      width: 100%;
+    }
+  }
   .profile__data {
     padding: 2em 1em;
   }
