@@ -1,0 +1,50 @@
+.loyalty__intro {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 6em 31.5em 3em 25em;
+  background-image: url(../../assets/img/loyalty-intro.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.loyalty__intro_title {
+  position: relative;
+  width: 51.5em;
+  height: 9.5em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 1.5em;
+  background-color: rgba($black, .2);
+  font-family: 'SF Pro Display Semibold', sans-serif;
+  color: $white;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: .3em;
+    height: 100%;
+    background-color: #f9e74b;
+  }
+  span {
+    font-size: 5.5em;
+  }
+}
+
+.loyalty__intro_subtitle {
+  margin-top: 1.5em;
+  color: $white;
+  span {
+    font-size: 3.5em;
+  }
+}
+
+.loyalty__intro_img {
+  width: 32.5em;
+  img {
+    width: 100%;
+  }
+}
