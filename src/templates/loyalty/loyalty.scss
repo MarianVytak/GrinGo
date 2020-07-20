@@ -160,7 +160,7 @@
 }
 
 .loyalty__vip {
-  padding: 3.5em 0;
+  padding: 3.5em 0 7em;
 }
 
 .loyalty__vip_list {
@@ -223,7 +223,7 @@
 .loyalty__status {
   width: 156em;
   margin: 0 auto;
-  padding: 3.5em 0;
+  padding: 3.5em 0 7em;
   box-sizing: border-box;
 }
 
@@ -240,6 +240,10 @@
   box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.15);
   background-color: #161820;
   text-align: center;
+  transition: .3s;
+  &:hover {
+    box-shadow: 0 3px 15px 0 rgba(255, 255, 255, 0.1);
+  }
   &:last-child {
     margin-right: 0;
   }
@@ -247,6 +251,9 @@
     display: flex;
     align-items: flex-end;
     background-color: rgba($black, 0.07);
+    &:hover {
+      box-shadow: 0 3px 12px 0 rgba(0, 0, 0, 0.15);
+    }
     .loyalty__status_grid_list_item {
       justify-content: flex-start;
       padding: 0 2.5em;
@@ -326,5 +333,61 @@
   color: $white;
   span {
     font-size: 2.5em;
+  }
+}
+
+.loyalty__maximum {
+  padding: 3.5em 0 7em;
+}
+
+.loyalty__maximum_list {
+  display: flex;
+  justify-content: center;
+  margin-top: 7em;
+}
+
+.loyalty__maximum_list_item {
+  width: 100%;
+  max-width: 48em;
+  margin-right: 6em;
+  padding: 6em 0;
+  box-sizing: border-box;
+  border-radius: 2em;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.16);
+  background-color: #232734;
+  text-align: center;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.loyalty__maximum_list_item_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2em;
+  img {
+    height: 20em;
+  }
+}
+
+.loyalty__maximum_list_item_title {
+  font-family: 'SF Pro Display Semibold', sans-serif;
+  font-size: 3em;
+  color: $white;
+}
+
+.loyalty__maximum_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 7em;
+  .btn {
+    width: 32em;
+    height: 8em;
+    border-radius: 6em;
+    span {
+      font-size: 2.4em;
+    }
   }
 }
