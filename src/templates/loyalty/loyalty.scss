@@ -160,3 +160,71 @@
     }
   }
 }
+
+.loyalty__vip {
+  padding: 3.5em 0;
+}
+
+.loyalty__vip_title {
+  font-family: 'SF Pro Display Light', sans-serif;
+  font-size: 4.5em;
+  color: $white;
+  text-align: center;
+}
+
+.loyalty__vip_list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 7em;
+}
+
+.loyalty__vip_list_item {
+  width: 100%;
+  max-width: 48em;
+  margin-right: 6em;
+  padding: 4em 4.5em 9.5em;
+  box-sizing: border-box;
+  border-radius: 2em;
+  box-shadow: 0 5px 5px 0 rgba(0, 0, 0, 0.16);
+  background-color: #232734;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.loyalty__vip_list_item_img {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25em;
+  img {
+    width: 30em;
+  }
+}
+
+.loyalty__vip_list_item_before {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'SF Pro Display Semibold', sans-serif;
+  font-size: 4em;
+  color: rgba($white, .3);
+}
+
+.loyalty__vip_list_item_title {
+  font-family: 'SF Pro Display Semibold', sans-serif;
+  font-size: 3em;
+  color: $white;
+  text-align: center;
+}
+
+.loyalty__vip_list_item_desc {
+  margin-top: 0.5em;
+  font-family: 'SF Pro Display Light', sans-serif;
+  font-size: 2em;
+  color: rgba($white, .4);
+  text-align: center;
+}
