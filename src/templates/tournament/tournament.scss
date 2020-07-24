@@ -48,6 +48,9 @@
   span {
     font-size: 3em;
   }
+  img {
+    width: 6em;
+  }
 }
 
 .tournament-intro__sum {
@@ -59,6 +62,7 @@
 }
 
 .tournament-intro__btn {
+  margin-top: 5em;
   .btn {
     position: relative;
     max-width: 35em;
@@ -373,5 +377,128 @@
   }
   &.price {
     -ms-grid-column: 4;
+  }
+}
+
+
+
+@media (max-width: 767.98px) {
+  .tournament-intro {
+    flex-wrap: wrap;
+    padding: 2em;
+  }
+  .tournament-intro__title {
+    height: auto;
+    padding: 1em 3em 1em 1em;
+    span {
+      font-size: 2em;
+    }
+  }
+  .tournament-intro__subtitle {
+    span {
+      font-size: 1.8em;
+    }
+    img {
+      width: 4em;
+    }
+  }
+  .tournament-intro__sum {
+    span {
+      font-size: 5em;
+    }
+  }
+  .tournament-intro__btn {
+    margin-top: 3em;
+    .btn {
+      max-width: 25em;
+      height: 5em;
+      span {
+        font-size: 1.5em;
+      }
+    }
+  }
+  .tournament-intro__users {
+    flex-wrap: wrap;
+  }
+  .tournament-intro__users_label {
+    margin-top: 0.5em;
+    padding-left: 0;
+    &:before {
+      display: none;
+    }
+  }
+  .tournament-intro__timer {
+    width: 28em;
+    padding: 0.5em 1em;
+  }
+  .tournament-step {
+    padding: 10em 0 3em;
+  }
+  .tournament-step__title {
+    span {
+      font-size: 3em;
+    }
+  }
+  .tournament-step__subtitle {
+    span {
+      font-size: 2.5em;
+    }
+  }
+  .tournament-step__label {
+    span {
+      font-size: 2em;
+    }
+  }
+  .loyalty__step_list_item {
+    padding: 0 1em;
+  }
+  .tournament-step__btn {
+    .btn {
+      width: 25em;
+      height: 5em;
+      span {
+        font-size: 1.5em;
+      }
+    }
+  }
+  .tournament-position {
+    padding: 2em 0 0;
+  }
+  .tournament-position__title {
+    font-size: 3em;
+  }
+  .tournament-position__info {
+    justify-content: center;
+    height: 5em;
+    margin-top: 2em;
+    padding: 0 1em;
+    span {
+      font-size: 2em;
+    }
+  }
+  .tournament-position__table {
+    padding: 1em 0 0;
+  }
+  .tournament-position__table_grid {}
+  .tournament-position__table_head .tournament-position__table_grid_item span {
+    font-size: 1.2em;
+  }
+  .tournament-position__table_body .tournament-position__table_grid_item.position span {
+    font-size: 1.5em;
+  }
+  .tournament-position__table_body .tournament-position__table_grid_item.name span {
+    font-size: 1.4em;
+  }
+  .tournament-position__table_body .tournament-position__table_grid_item.points span {
+    font-size: 1.5em;
+  }
+  .tournament-position__table_body .tournament-position__table_grid_item.price span {
+    font-size: 1.5em;
+  }
+  .tournament-position__table_body .tournament-position__table_grid_item {
+    height: 4em;
+  }
+  .tournament-position__table_head .tournament-position__table_grid_item {
+    height: 2.5em;
   }
 }
