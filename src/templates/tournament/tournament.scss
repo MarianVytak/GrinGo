@@ -34,6 +34,7 @@
   }
   span {
     font-size: 5.6em;
+    text-shadow: 3px 3px 0 rgba(0, 0, 0, 0.2);
   }
 }
 
@@ -47,6 +48,7 @@
   text-transform: uppercase;
   span {
     font-size: 3em;
+    text-shadow: 1px 1px 7px #825614;
   }
   img {
     width: 6em;
@@ -56,6 +58,8 @@
 .tournament-intro__sum {
   font-family: 'SF Pro Display Bold', sans-serif;
   color: $white;
+  text-shadow: 0.3em 0 1.6em rgba(0, 0, 0, 0.35);
+  line-height: 1;
   span {
     font-size: 10em;
   }
@@ -283,8 +287,12 @@
   border-radius: 1em 1em 0 0;
   background-color: #232633;
   color: $white;
+}
+
+.tournament-position__info_text {
+  font-size: 3em;
   span {
-    font-size: 3em;
+    color: rgba($white, .5);
   }
 }
 
@@ -472,9 +480,9 @@
     height: 5em;
     margin-top: 2em;
     padding: 0 1em;
-    span {
-      font-size: 2em;
-    }
+  }
+  .tournament-position__info_text {
+    font-size: 2em;
   }
   .tournament-position__table {
     padding: 1em 0 0;
