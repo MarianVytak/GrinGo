@@ -254,8 +254,124 @@
   }
 }
 
-.tournament-step {}
+.tournament-position {
+  max-width: 130em;
+  margin: 0 auto;
+  padding: 5.5em 0 9em;
+  box-sizing: border-box;
+}
 
-.tournament-step {}
+.tournament-position__title {
+  font-family: 'SF Pro Display Meduim', sans-serif;
+  font-size: 4.5em;
+  text-align: center;
+  color: $white;
+}
 
-.tournament-step {}
+.tournament-position__info {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 8em;
+  margin-top: 6em;
+  padding: 0 4em;
+  box-sizing: border-box;
+  border-radius: 1em 1em 0 0;
+  background-color: #232633;
+  color: $white;
+  span {
+    font-size: 3em;
+  }
+}
+
+.tournament-position__table {
+  padding: 2em;
+  box-sizing: border-box;
+  border-radius: 0 0 1em 1em;
+  background-color: #15171e;
+}
+
+.tournament-position__table_head {
+  .tournament-position__table_grid_item {
+    height: 4em;
+    font-family: 'SF Pro Display Semibold', sans-serif;
+    color: #909094;
+    text-align: center;
+    span {
+      font-size: 2em;
+    }
+  }
+}
+
+.tournament-position__table_body {
+  .tournament-position__table_grid {
+    border-bottom: 1px solid #15171e;
+    &:last-child {
+      border: none;
+    }
+  }
+  .tournament-position__table_grid_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 6em;
+    background-color: #1e2027;
+    &.position {
+      font-family: 'SF Pro Display Meduim', sans-serif;
+      color: #d2d2d2;
+      span {
+        font-size: 1.8em;
+      }
+    }
+    &.name {
+      font-family: 'SF Pro Display Meduim', sans-serif;
+      color: $white;
+      span {
+        font-size: 1.8em;
+      }
+    }
+    &.points {
+      font-family: 'SF Pro Display Meduim', sans-serif;
+      color: #c2c2c4;
+      span {
+        font-size: 2em;
+      }
+    }
+    &.price {
+      font-family: 'SF Pro Display Semibold', sans-serif;
+      color: $white;
+      span {
+        font-size: 2.5em;
+      }
+    }
+  }
+}
+
+.tournament-position__table_grid {
+  display: -ms-grid;
+  -ms-grid-columns: 1fr 1.2fr 1fr 1fr;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr 1fr;
+  box-sizing: border-box;
+}
+
+.tournament-position__table_grid_item {
+  box-sizing: border-box;
+  border-right: 1px solid #15171e;
+  &:last-child {
+    border: none;
+  }
+  &.position {
+    -ms-grid-column: 1;
+  }
+  &.name {
+    -ms-grid-column: 2;
+  }
+  &.points {
+    -ms-grid-column: 3;
+  }
+  &.price {
+    -ms-grid-column: 4;
+  }
+}
