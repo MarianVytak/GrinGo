@@ -191,3 +191,71 @@
   color: $white;
   line-height: 1;
 }
+
+.tournament-step {
+  padding: 12em 0 5.5em;
+  background-image: linear-gradient(to bottom, #410813 3%, rgba(18, 3, 6, 0));
+  .loyalty__step_list {
+    &:before {
+      display: none;
+    }
+  }
+  .loyalty__step_list_item_title {
+    color: rgba($white, .7);
+  }
+  .loyalty__step_list_item_logo {
+    box-shadow: 0 0 3em 0 rgba(0, 0, 0, 0.16);
+    background-color: rgba(#2d313e, .3);
+  }
+}
+
+.tournament-step__title {
+  font-family: 'SF Pro Display Semibold', sans-serif;
+  text-align: center;
+  color: $white;
+  text-transform: uppercase;
+  span {
+    font-size: 5.5em;
+  }
+}
+
+.tournament-step__subtitle {
+  font-family: 'SF Pro Display Meduim', sans-serif;
+  text-align: center;
+  color: $white;
+  span {
+    font-size: 5em;
+  }
+}
+
+.tournament-step__label {
+  margin-bottom: 1.5em;
+  font-family: 'SF Pro Display Semibold', sans-serif;
+  color: $white;
+  text-transform: uppercase;
+  text-align: center;
+  span {
+    font-size: 2.7em;
+  }
+}
+
+.tournament-step__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4em;
+  .btn {
+    width: 30em;
+    height: 7em;
+    border-radius: 6em;
+    span {
+      font-size: 2em;
+    }
+  }
+}
+
+.tournament-step {}
+
+.tournament-step {}
+
+.tournament-step {}

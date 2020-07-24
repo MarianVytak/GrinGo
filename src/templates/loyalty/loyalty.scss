@@ -124,7 +124,8 @@
 
 .loyalty__step_list_item_icon {
   img {
-    height: 12em;
+    width: 12em;
+    max-height: 12em;
   }
 }
 
@@ -498,7 +499,8 @@
   }
   .loyalty__step_list_item_icon {
     img {
-      height: 8em;
+      width: 8em;
+      max-height: 8em;
     }
   }
   .loyalty__step_list_item_title {
